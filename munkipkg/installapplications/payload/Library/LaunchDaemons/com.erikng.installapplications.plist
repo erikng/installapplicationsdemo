@@ -11,7 +11,7 @@
 		<string>--jsonurl</string>
 		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/demo.json</string>
 		<string>--depnotify</string>
-		<string>Command: WindowTitle: InstallApplications Demo</string>
+		<string>Command: WindowTitle: InstallApplicationsDemo</string>
 		<string>Command: Image: /Applications/Launchpad.app/Contents/Resources/Launchpad.icns</string>
 		<string>Status: Configuring Machine...</string>
 		<string>DEPNotifyPath: /Applications/Utilities/DEPNotify.app</string>
