@@ -47,7 +47,7 @@
 								<key>ClientIdentifier</key>
 								<string>production</string>
 								<key>SoftwareRepoURL</key>
-								<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo</string>
+								<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/munki</string>
 							</dict>
 						</dict>
 					</array>

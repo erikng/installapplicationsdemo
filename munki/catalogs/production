@@ -358,7 +358,7 @@
 		<key>display_name</key>
 		<string>Munki</string>
 		<key>installer_item_hash</key>
-		<string>8abbb4db192cce55b94b3c243ca33766186149707393afd1eaaeadc933d8ef43</string>
+		<string>6a2c99d52204770a8e024e2b9213585adcab4b319f649ea395519ab86066efa1</string>
 		<key>installer_item_location</key>
 		<string>ManagedInstalls-1.0.mobileconfig</string>
 		<key>installer_item_size</key>
