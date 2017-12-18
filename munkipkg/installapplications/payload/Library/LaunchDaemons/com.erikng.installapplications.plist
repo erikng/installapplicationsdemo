@@ -9,7 +9,7 @@
 		<string>/usr/bin/python</string>
 		<string>/Library/Application Support/installapplications/installapplications.py</string>
 		<string>--jsonurl</string>
-		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/demo.json</string>
+		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/demo.json</string>
 		<string>DEPNotifySkipStatus</string>
 		<string>Command: WindowTitle: Pinterest</string>
 		<string>Command: Image: /Applications/Launchpad.app/Contents/Resources/Launchpad.icns</string>
