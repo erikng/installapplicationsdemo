@@ -20,9 +20,9 @@
     },
     {
       "file": "/Library/Application Support/installapplications/DEPNotify-1.0.3.pkg",
-      "hash": "527d74c85e1597a733da498674c047de7d293a6e455acaf88b33e325f1b7fb00",
+      "hash": "d09b878d32418d16d79c0ad4d89bb0d426c2914a6ce1f9238d7b4e98762f9c35",
       "name": "DEPNotify",
-      "packageid": "com.installapplicationsdemo.depnotify",
+      "packageid": "menu.nomad.DEPNotify",
       "type": "package",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/DEPNotify-1.0.3.pkg",
       "version": "1.0.3"
