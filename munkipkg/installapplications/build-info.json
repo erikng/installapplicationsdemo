@@ -1,0 +1,14 @@
+{
+    "distribution_style": true,
+    "identifier": "com.installapplicationsdemo.installapplications",
+    "install_location": "/",
+    "name": "InstallApplicationsDemo-${version}.pkg",
+    "ownership": "recommended",
+    "postinstall_action": "none",
+    "signing_info": {
+        "identity": "Mac Installer: Erik Gomez (XXXXXXXXXXX)",
+        "timestamp": true
+    },
+    "suppress_bundle_relocation": true,
+    "version": "1.0"
+}

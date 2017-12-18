@@ -1,0 +1,10 @@
+{
+    "distribution_style": true,
+    "identifier": "com.installapplicationsdemo.depnotify",
+    "install_location": "/",
+    "name": "DEPNotify-${version}.pkg",
+    "ownership": "recommended",
+    "postinstall_action": "none",
+    "suppress_bundle_relocation": true,
+    "version": "1.0.3"
+}

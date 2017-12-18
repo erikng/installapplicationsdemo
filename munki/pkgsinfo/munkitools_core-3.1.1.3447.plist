@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>category</key>
+	<string>DEP</string>
+	<key>description</key>
+	<string></string>
+	<key>developer</key>
+	<string></string>
+	<key>display_name</key>
+	<string></string>
+	<key>installed_size</key>
+	<integer>857</integer>
+	<key>installer_item_hash</key>
+	<string>9fa295fccb24369f4d6296a170fca5ec26f4bae46138fb58579ac24fdfc5b5cb</string>
+	<key>installer_item_location</key>
+	<string>munkitools_core-3.1.1.3447.pkg</string>
+	<key>installer_item_size</key>
+	<integer>188</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>munkitools_core</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>857</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.core</string>
+			<key>version</key>
+			<string>3.1.1.3447</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.1.1.3447</string>
+</dict>
+</plist>

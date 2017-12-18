@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadIdentifier</key>
+	<string>com.installapplicationsdemo.munki</string>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>category</key>
+	<string>DEP</string>
+	<key>description</key>
+	<string></string>
+	<key>developer</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Munki</string>
+	<key>installer_item_hash</key>
+	<string>8abbb4db192cce55b94b3c243ca33766186149707393afd1eaaeadc933d8ef43</string>
+	<key>installer_item_location</key>
+	<string>ManagedInstalls-1.0.mobileconfig</string>
+	<key>installer_item_size</key>
+	<integer>1</integer>
+	<key>installer_type</key>
+	<string>profile</string>
+	<key>minimum_munki_version</key>
+	<string>2.2</string>
+	<key>minimum_os_version</key>
+	<string>10.7</string>
+	<key>name</key>
+	<string>ManagedInstalls.mobileconfig</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_profile</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

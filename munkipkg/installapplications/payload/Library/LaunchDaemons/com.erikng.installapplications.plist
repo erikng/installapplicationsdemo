@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.erikng.installapplications</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/python</string>
+		<string>/Library/Application Support/installapplications/installapplications.py</string>
+		<string>--jsonurl</string>
+		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/demo.json</string>
+		<string>DEPNotifySkipStatus</string>
+		<string>Command: WindowTitle: Pinterest</string>
+		<string>Command: Image: /Applications/Launchpad.app/Contents/Resources/Launchpad.icns</string>
+		<string>Command: Determinate: 5</string>
+		<string>Status: Configuring Machine...</string>
+		<string>DEPNotifyPath: /Applications/Utilities/DEPNotify.app</string>
+		<string>DEPNotifyArguments: -munki</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardOutPath</key>
+	<string>/var/log/installapplications.log</string>
+	<key>StandardErrorPath</key>
+	<string>/var/log/installapplications.log</string>
+</dict>
+</plist>

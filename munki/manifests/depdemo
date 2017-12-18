@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>managed_installs</key>
+	<array>
+		<string>crypt</string>
+		<string>dockutil</string>
+		<string>munkitools_app</string>
+		<string>munkitools_app_usage</string>
+		<string>munkitools_core</string>
+		<string>munkitools_launchd</string>
+		<string>Crypt.mobileconfig</string>
+		<string>ManagedInstalls.mobileconfig</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,10 @@
+{
+    "distribution_style": true,
+    "identifier": "com.installapplicationsdemo.dockutil",
+    "install_location": "/",
+    "name": "dockutil-${version}.pkg",
+    "ownership": "recommended",
+    "postinstall_action": "none",
+    "suppress_bundle_relocation": true,
+    "version": "2.0.6"
+}

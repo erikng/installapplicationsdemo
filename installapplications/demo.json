@@ -1,0 +1,84 @@
+{
+  "setupassistant": [
+    {
+      "file": "/Library/Application Support/installapplications/munkitools_launchd-3.0.3265.pkg",
+      "hash": "66441eaba5aa717fd81d1a84ddfb309da90cff6bc5904dc0e94c1f6e216c2a89",
+      "name": "Munki LaunchD",
+      "packageid": "com.googlecode.munki.launchd",
+      "type": "package",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/pkgs/munkitools_launchd-3.0.3265.pkg",
+      "version": "3.0.3265"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/munkitools_core-3.1.1.3447.pkg",
+      "hash": "9fa295fccb24369f4d6296a170fca5ec26f4bae46138fb58579ac24fdfc5b5cb",
+      "name": "Munki Core",
+      "packageid": "com.googlecode.munki.core",
+      "type": "package",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/pkgs/munkitools_core-3.1.1.3447.pkg",
+      "version": "3.1.1.3447"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/DEPNotify-1.0.3.pkg",
+      "hash": "527d74c85e1597a733da498674c047de7d293a6e455acaf88b33e325f1b7fb00",
+      "name": "DEPNotify",
+      "packageid": "com.installapplicationsdemo.depnotify",
+      "type": "package",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/pkgs/DEPNotify-1.0.3.pkg",
+      "version": "1.0.3"
+    }
+  ],
+  "userland": [
+    {
+      "donotwait": true,
+      "file": "/Library/Application Support/installapplications/caffeinate.py",
+      "hash": "a2dcf351e158777fa7fb65768499c7574fdd52ae5901538170b163040c4504a3",
+      "name": "Caffeinate Machine",
+      "type": "rootscript",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/scripts/root/caffeinate.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/high_sierra_vm_bless.py",
+      "hash": "52df572785e5b79806032049000450da463ecceeecc83671e1bc6bd61996248f",
+      "name": "Bless VM",
+      "type": "rootscript",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/scripts/root/high_sierra_vm_bless.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/munki_bootstrap.py",
+      "hash": "7c2c4340e65f4968d9e07e2c500ad68db3a0aa43154eec9db38e4f0c23fee89a",
+      "name": "Munki Bootstrap",
+      "type": "rootscript",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/scripts/root/munki_bootstrap.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/munki_launchd_loader.py",
+      "hash": "4f2e26355d940fa7091d7271b5d53789cb9b0e37f00565cbbcb66162ca5fa2d8",
+      "name": "Munki LaunchD Loader",
+      "type": "rootscript",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/scripts/root/munki_launchd_loader.py"
+    },
+    {
+      "donotwait": true,
+      "file": "/Library/Application Support/installapplications/munki_auto_trigger.py",
+      "hash": "0ac1bef0c51c3eb2da95418abc691eb1eb02f1096b1ca7d709ffd669f620c13d",
+      "name": "Munki Auto Trigger",
+      "type": "rootscript",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/scripts/root/munki_auto_trigger.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/userscripts/dockutil.py",
+      "hash": "1a8e8559e40c672ad63ecf136c31db4d2dc97a2bef8002a16497fa08bfbf6819",
+      "name": "Dockutil User",
+      "type": "userscript",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/scripts/user/dockutil.py"
+    },
+    {
+      "file": "/Library/Application Support/installapplications/depnotify_end.py",
+      "hash": "8654428ada3b861e07ef46bbb160dc06be2ea62b3d961faccb6a8fe7539f6a65",
+      "name": "DEPNotify End",
+      "type": "rootscript",
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/installapplications/scripts/root/depnotify_end.py"
+    }
+  ]
+}
