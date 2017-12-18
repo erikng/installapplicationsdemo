@@ -12,7 +12,7 @@
 		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/demo.json</string>
 		<string>--depnotify</string>
 		<string>DEPNotifySkipStatus</string>
-		<string>Command: WindowTitle: Pinterest</string>
+		<string>Command: WindowTitle: InstallApplications Demo</string>
 		<string>Command: Image: /Applications/Launchpad.app/Contents/Resources/Launchpad.icns</string>
 		<string>Command: Determinate: 1</string>
 		<string>Status: Configuring Machine...</string>
