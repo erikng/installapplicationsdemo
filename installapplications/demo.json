@@ -32,7 +32,7 @@
     {
       "donotwait": true,
       "file": "/Library/Application Support/installapplications/caffeinate.py",
-      "hash": "a2dcf351e158777fa7fb65768499c7574fdd52ae5901538170b163040c4504a3",
+      "hash": "92bb078979917a745febdfa10256831dfb4fb46ed0628af3b1e04bf5bbede910",
       "name": "Caffeinate Machine",
       "type": "rootscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/caffeinate.py"
