@@ -46,14 +46,14 @@
     },
     {
       "file": "/Library/Application Support/installapplications/munki_bootstrap.py",
-      "hash": "7c2c4340e65f4968d9e07e2c500ad68db3a0aa43154eec9db38e4f0c23fee89a",
+      "hash": "ea395d468485aee540ceacff40fb46bab90bda0dbc3d548f73101786fbccbe5a",
       "name": "Munki Bootstrap",
       "type": "rootscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/munki_bootstrap.py"
     },
     {
       "file": "/Library/Application Support/installapplications/munki_launchd_loader.py",
-      "hash": "4f2e26355d940fa7091d7271b5d53789cb9b0e37f00565cbbcb66162ca5fa2d8",
+      "hash": "954b7cec547dcc4e638991301ba600419e2b6aed15dc09ee412b1ba6218d31af",
       "name": "Munki LaunchD Loader",
       "type": "rootscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/munki_launchd_loader.py"

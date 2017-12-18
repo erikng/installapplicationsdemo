@@ -111,7 +111,7 @@ def main():
         kCFPreferencesAnyUser, kCFPreferencesCurrentHost)
 
     CFPreferencesSetValue(
-        'SoftwareRepoURL', munkurl,
+        'SoftwareRepoURL', munkiurl,
         '/Library/Preferences/ManagedInstalls',
         kCFPreferencesAnyUser, kCFPreferencesCurrentHost)
 

@@ -4,6 +4,7 @@ import os
 
 
 def launchctld(identifier):
+    launchd = identifier + '.plist'
     try:
         path = os.path.join('/Library', 'LaunchDaemons', launchd)
         cmd = ['/bin/launchctl', 'load', path]
