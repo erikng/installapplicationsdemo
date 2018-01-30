@@ -1,4 +1,5 @@
 {
+  "preflight" : [],
   "setupassistant": [
     {
       "file": "/Library/Application Support/installapplications/munkitools_launchd-3.0.3265.pkg",
