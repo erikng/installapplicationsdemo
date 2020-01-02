@@ -71,18 +71,25 @@ item-type='rootscript' \
 item-url="${ROOTSCRIPTSURL}/munki_launchd_loader.py" \
 script-do-not-wait=False \
 --item \
+item-name='Munki Auto Trigger' \
+item-path="${ROOTSCRIPTSDIR}/munki_auto_trigger.py" \
+item-stage='userland' \
+item-type='rootscript' \
+item-url="${ROOTSCRIPTSURL}/munki_auto_trigger.py" \
+script-do-not-wait=True \
+--item \
 item-name='Dockutil User' \
 item-path="${USERSCRIPTSDIR}/dockutil.py" \
 item-stage='userland' \
 item-type='userscript' \
 item-url="${USERSCRIPTSURL}/dockutil.py" \
-script-do-not-wait=True \
+script-do-not-wait=False \
 --item \
 item-name='DEPNotify End' \
 item-path="${ROOTSCRIPTSDIR}/depnotify_end.py" \
 item-stage='userland' \
 item-type='rootscript' \
 item-url="${ROOTSCRIPTSURL}/depnotify_end.py" \
-script-do-not-wait=True
+script-do-not-wait=False
 
 /bin/mv ~/Desktop/bootstrap.json ${JSON}
