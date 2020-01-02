@@ -2,7 +2,7 @@
   "preflight": [
     {
       "file": "/Library/installapplications/preflight.py", 
-      "hash": "7a3f7c11e7fc2f6114a603b505450d6a31568e51cb6ba07b4ba715c2ccf2713f", 
+      "hash": "5164e2b773b1c146f5f91cfaf6a234b153c350340a8f3ab37ffe3a1a385248d0", 
       "name": "Preflight", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/preflight.py"

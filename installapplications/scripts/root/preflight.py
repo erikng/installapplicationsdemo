@@ -50,9 +50,9 @@ def main():
     fail though, we need to re-run the provisioning process.'''
 
     pkg_version = LooseVersion(str(get_install_package_version(
-        'com.installapplicationsdemo.installapplications')))
+        'menu.nomad.DEPNotify')))
 
-    if pkg_version >= LooseVersion('1.0'):
+    if pkg_version >= LooseVersion('1.1.5'):
         pass
     else:
         sys.exit(1)
