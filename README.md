@@ -1,5 +1,5 @@
 # InstallApplications Demo
-This repository is a full example of how to use InstallApplications[https://github.com/erikng/installapplications] in a production environment.
+This repository is a full example of how to use [InstallApplications](https://github.com/erikng/installapplications) in a production environment.
 
 It has been updated for the new Python 3.8 embedded version of InstallApplications
 
