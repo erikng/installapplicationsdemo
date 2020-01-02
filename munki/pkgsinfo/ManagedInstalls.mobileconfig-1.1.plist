@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadIdentifier</key>
+	<string>com.installapplicationsdemo.munki</string>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>category</key>
+	<string>Managed Software Center</string>
+	<key>description</key>
+	<string>Management file Munki</string>
+	<key>developer</key>
+	<string>Erik Gomez</string>
+	<key>display_name</key>
+	<string>Munki</string>
+	<key>icon_name</key>
+	<string>Munki.png</string>
+	<key>installer_item_hash</key>
+	<string>bfd587a73b90ef69291f072a5337391e00647eda258c59ffd9375c3a1bd3d98f</string>
+	<key>installer_item_location</key>
+	<string>ManagedInstalls-1.1.mobileconfig</string>
+	<key>installer_item_size</key>
+	<integer>1</integer>
+	<key>installer_type</key>
+	<string>profile</string>
+	<key>minimum_munki_version</key>
+	<string>2.2</string>
+	<key>minimum_os_version</key>
+	<string>10.7</string>
+	<key>name</key>
+	<string>ManagedInstalls.mobileconfig</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_profile</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.1</string>
+</dict>
+</plist>
