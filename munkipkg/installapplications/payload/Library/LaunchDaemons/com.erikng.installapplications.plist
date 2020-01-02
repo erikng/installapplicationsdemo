@@ -6,11 +6,10 @@
 	<string>com.erikng.installapplications</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/bin/python</string>
-		<string>/Library/Application Support/installapplications/installapplications.py</string>
+		<string>/Library/installapplications/Python.framework/Versions/3.8/bin/python3</string>
+		<string>/Library/installapplications/installapplications.py</string>
 		<string>--jsonurl</string>
 		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/demo.json</string>
-		<string>--reboot</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
