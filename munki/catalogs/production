@@ -145,6 +145,14 @@
 		<string>remove_profile</string>
 		<key>uninstallable</key>
 		<true/>
+		<key>update_for</key>
+		<array>
+			<string>munkitools_app_usage</string>
+			<string>munkitools_app</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+			<string>munkitools_python</string>
+		</array>
 		<key>version</key>
 		<string>1.1</string>
 	</dict>
