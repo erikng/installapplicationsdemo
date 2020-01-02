@@ -8,6 +8,7 @@
 
 # Written by Erik Gomez
 import os
+import platform
 
 
 def deplog(text):
@@ -17,9 +18,19 @@ def deplog(text):
         log.write(text + "\n")
 
 
+def get_os_version():
+    '''Return OS version.'''
+    return platform.mac_ver()[0]
+
+
 def main():
     '''Main thread'''
     depnotify_log = '/private/var/tmp/depnotify.log'
+    # 10.15 has a new path for all built-in apps except for Safari
+    if '10.15' in get_os_version():
+        icns_path = '/System/Applications/Launchpad.app/Contents/Resources/Launchpad.icns'
+    else:
+        icns_path = '/Applications/Launchpad.app/Contents/Resources/Launchpad.icns'
     if os.path.exists(depnotify_log):
         # pylint: disable=bare-except
         try:
@@ -28,7 +39,7 @@ def main():
             pass
         # pylint: enable=bare-except
     deplog("Command: WindowTitle: InstallApplications Demo")
-    deplog("Command: Image: /Applications/Launchpad.app/Contents/Resources/Launchpad.icns")
+    deplog("Command: Image: %s") % icns_path
     deplog("Status: Configuring Machine..")
 
 
