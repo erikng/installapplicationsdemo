@@ -36,6 +36,13 @@ item-type='package' \
 item-url="${PKGSURL}/munkitools_core-4.0.0.3881.pkg" \
 script-do-not-wait=False \
 --item \
+item-name='Munki (Python)' \
+item-path="${PKGSDIR}/munkitools_python-3.7.4.pkg" \
+item-stage='setupassistant' \
+item-type='package' \
+item-url="${PKGSURL}/munkitools_python-3.7.4.pkg" \
+script-do-not-wait=False \
+--item \
 item-name='Dockutil Python3' \
 item-path="${PKGSDIR}/dockutil-3.0.pkg" \
 item-stage='setupassistant' \

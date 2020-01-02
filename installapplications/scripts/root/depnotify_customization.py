@@ -9,6 +9,7 @@
 # Written by Erik Gomez
 import os
 import platform
+import time
 
 
 def deplog(text):
@@ -40,7 +41,9 @@ def main():
         # pylint: enable=bare-except
     deplog("Command: WindowTitle: InstallApplications Demo")
     deplog("Command: Image: {}".format(icns_path))
-    deplog("Status: Configuring Machine..")
+    deplog("Status: Configuring Machine...")
+
+    time.sleep(2)
 
 
 if __name__ == '__main__':

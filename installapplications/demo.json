@@ -28,6 +28,15 @@
       "version": "4.0.0.3881"
     }, 
     {
+      "file": "/Library/installapplications/munkitools_python-3.7.4.pkg", 
+      "hash": "d54f7581dfcd8b199714ff821b27e0d5d3c45fa4c367722e87bbe963fa9e8f72", 
+      "name": "Munki (Python)", 
+      "packageid": "com.googlecode.munki.python", 
+      "type": "package", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/pkgs/munkitools_python-3.7.4.pkg", 
+      "version": "3.7.4"
+    }, 
+    {
       "file": "/Library/installapplications/dockutil-3.0.pkg", 
       "hash": "faabea87b63c98e5a11823c3b8ec6968a10eaf2e55a50143035e7c8cf1adb207", 
       "name": "Dockutil Python3", 
@@ -47,7 +56,7 @@
     }, 
     {
       "file": "/Library/installapplications/depnotify_customization.py", 
-      "hash": "1bdf23fea6a28c97dc6f683f42c20fee8b04d769b6d1db570c7771ad8eec9727", 
+      "hash": "f17c10213e645c7b3d357d50280bf49d64c04a7591533c5404f04d9f144202db", 
       "name": "DEPNotify Customization", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/depnotify_customization.py"
