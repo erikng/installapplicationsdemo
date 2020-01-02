@@ -9,19 +9,20 @@
 		<string>/usr/bin/python</string>
 		<string>/Library/Application Support/installapplications/installapplications.py</string>
 		<string>--jsonurl</string>
-		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/demo.json</string>
+		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/demo.json</string>
 		<string>--depnotify</string>
 		<string>Command: WindowTitle: InstallApplicationsDemo</string>
 		<string>Command: Image: /Applications/Launchpad.app/Contents/Resources/Launchpad.icns</string>
 		<string>Status: Configuring Machine...</string>
 		<string>DEPNotifyPath: /Applications/Utilities/DEPNotify.app</string>
 		<string>DEPNotifyArguments: -munki</string>
+		<string>--reboot</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardOutPath</key>
-	<string>/var/log/installapplications.log</string>
+	<string>/var/log/installapplications/installapplications.log</string>
 	<key>StandardErrorPath</key>
-	<string>/var/log/installapplications.log</string>
+	<string>/var/log/installapplications/installapplications.log</string>
 </dict>
 </plist>
