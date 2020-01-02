@@ -124,7 +124,7 @@
 		<key>icon_name</key>
 		<string>Munki.png</string>
 		<key>installer_item_hash</key>
-		<string>bfd587a73b90ef69291f072a5337391e00647eda258c59ffd9375c3a1bd3d98f</string>
+		<string>51bedfc8e82e28a30d0b3dfd0350a3b17f59e396183f544a59c04dc05afed601</string>
 		<key>installer_item_location</key>
 		<string>ManagedInstalls-1.1.mobileconfig</string>
 		<key>installer_item_size</key>
