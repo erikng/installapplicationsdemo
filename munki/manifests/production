@@ -9,11 +9,12 @@
 	<key>managed_installs</key>
 	<array>
 		<string>crypt</string>
-		<string>dockutil</string>
+		<string>GoogleChrome</string>
 		<string>munkitools_app</string>
 		<string>munkitools_app_usage</string>
 		<string>munkitools_core</string>
 		<string>munkitools_launchd</string>
+		<string>munkitools_python</string>
 	</array>
 </dict>
 </plist>

@@ -1,84 +1,124 @@
 {
-  "preflight" : [],
+  "preflight": [
+    {
+      "file": "/Library/installapplications/preflight.py", 
+      "hash": "5164e2b773b1c146f5f91cfaf6a234b153c350340a8f3ab37ffe3a1a385248d0", 
+      "name": "Preflight", 
+      "type": "rootscript", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/preflight.py"
+    }
+  ], 
   "setupassistant": [
     {
-      "file": "/Library/Application Support/installapplications/munkitools_launchd-3.0.3265.pkg",
-      "hash": "66441eaba5aa717fd81d1a84ddfb309da90cff6bc5904dc0e94c1f6e216c2a89",
-      "name": "Munki LaunchD",
-      "packageid": "com.googlecode.munki.launchd",
-      "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_launchd-3.0.3265.pkg",
+      "file": "/Library/installapplications/munkitools_launchd-3.0.3265.pkg", 
+      "hash": "66441eaba5aa717fd81d1a84ddfb309da90cff6bc5904dc0e94c1f6e216c2a89", 
+      "name": "Munki (LaunchD)", 
+      "packageid": "com.googlecode.munki.launchd", 
+      "type": "package", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_launchd-3.0.3265.pkg", 
       "version": "3.0.3265"
-    },
+    }, 
     {
-      "file": "/Library/Application Support/installapplications/munkitools_core-3.1.1.3447.pkg",
-      "hash": "9fa295fccb24369f4d6296a170fca5ec26f4bae46138fb58579ac24fdfc5b5cb",
-      "name": "Munki Core",
-      "packageid": "com.googlecode.munki.core",
-      "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_core-3.1.1.3447.pkg",
-      "version": "3.1.1.3447"
-    },
+      "file": "/Library/installapplications/munkitools_core-4.0.0.3881.pkg", 
+      "hash": "79c3c585a0ba79909df45a8f2c739a8e836529d7d875d6c3fc5d21e212c5a2af", 
+      "name": "Munki (Core)", 
+      "packageid": "com.googlecode.munki.core", 
+      "type": "package", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_core-4.0.0.3881.pkg", 
+      "version": "4.0.0.3881"
+    }, 
     {
-      "file": "/Library/Application Support/installapplications/DEPNotify-1.0.3.pkg",
-      "hash": "d09b878d32418d16d79c0ad4d89bb0d426c2914a6ce1f9238d7b4e98762f9c35",
-      "name": "DEPNotify",
-      "packageid": "menu.nomad.DEPNotify",
-      "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/DEPNotify-1.0.3.pkg",
-      "version": "1.0.3"
+      "file": "/Library/installapplications/munkitools_python-3.7.4.pkg", 
+      "hash": "d54f7581dfcd8b199714ff821b27e0d5d3c45fa4c367722e87bbe963fa9e8f72", 
+      "name": "Munki (Python)", 
+      "packageid": "com.googlecode.munki.python", 
+      "type": "package", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_python-3.7.4.pkg", 
+      "version": "3.7.4"
+    }, 
+    {
+      "file": "/Library/installapplications/dockutil-3.0.pkg", 
+      "hash": "faabea87b63c98e5a11823c3b8ec6968a10eaf2e55a50143035e7c8cf1adb207", 
+      "name": "Dockutil Python3", 
+      "packageid": "com.installapplicationsdemo.dockutil", 
+      "type": "package", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/dockutil-3.0.pkg", 
+      "version": "3.0"
+    }, 
+    {
+      "file": "/Library/installapplications/DEPNotify-1.1.5.pkg", 
+      "hash": "d969b3f5f617424de526a45f5b8badf1d7cbfef8974691beecb3729103003ba0", 
+      "name": "DEPNotify", 
+      "packageid": "menu.nomad.DEPNotify", 
+      "type": "package", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/DEPNotify-1.1.5.pkg", 
+      "version": "1.1.5"
+    }, 
+    {
+      "file": "/Library/installapplications/depnotify_customization.py", 
+      "hash": "f17c10213e645c7b3d357d50280bf49d64c04a7591533c5404f04d9f144202db", 
+      "name": "DEPNotify Customization", 
+      "type": "rootscript", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/depnotify_customization.py"
     }
-  ],
+  ], 
   "userland": [
     {
-      "donotwait": true,
-      "file": "/Library/Application Support/installapplications/caffeinate.py",
-      "hash": "92bb078979917a745febdfa10256831dfb4fb46ed0628af3b1e04bf5bbede910",
-      "name": "Caffeinate Machine",
-      "type": "rootscript",
+      "file": "/Library/installapplications/userscripts/depnotify_user_launcher.py", 
+      "hash": "68cbfceffaa5c0bc713b75aa0bddd9e7b58190af1ada9610befd36f6773d30c9", 
+      "name": "DEPNotify User Launcher", 
+      "type": "userscript", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/user/depnotify_user_launcher.py"
+    }, 
+    {
+      "donotwait": true, 
+      "file": "/Library/installapplications/caffeinate.py", 
+      "hash": "6092601408cf71da4c2010edf992a1f0be4aee6e4461034ef9e3fc34f4e45c39", 
+      "name": "Caffeinate Machine", 
+      "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/caffeinate.py"
-    },
+    }, 
     {
-      "file": "/Library/Application Support/installapplications/high_sierra_vm_bless.py",
-      "hash": "52df572785e5b79806032049000450da463ecceeecc83671e1bc6bd61996248f",
-      "name": "Bless VM",
-      "type": "rootscript",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/high_sierra_vm_bless.py"
-    },
+      "file": "/Library/installapplications/bless_vm.py", 
+      "hash": "1989392eefeea306f29e349d05b6ede868cbe975fe936443df39fd080655b1e4", 
+      "name": "Bless VM", 
+      "type": "rootscript", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/bless_vm.py"
+    }, 
     {
-      "file": "/Library/Application Support/installapplications/munki_bootstrap.py",
-      "hash": "78d00124021f8c6d8fbaf5d35a249715be3ba1206a8227bf9b8f2213f128fcf8",
-      "name": "Munki Bootstrap",
-      "type": "rootscript",
+      "file": "/Library/installapplications/munki_bootstrap.py", 
+      "hash": "89860ef0d2c361c74499abbc8c830fb1d1add977ca400b4b8b7462c5e816c56d", 
+      "name": "Munki Bootsrap", 
+      "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/munki_bootstrap.py"
-    },
+    }, 
     {
-      "file": "/Library/Application Support/installapplications/munki_launchd_loader.py",
-      "hash": "954b7cec547dcc4e638991301ba600419e2b6aed15dc09ee412b1ba6218d31af",
-      "name": "Munki LaunchD Loader",
-      "type": "rootscript",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/munki_launchd_loader.py"
-    },
-    {
-      "donotwait": true,
-      "file": "/Library/Application Support/installapplications/munki_auto_trigger.py",
-      "hash": "0ac1bef0c51c3eb2da95418abc691eb1eb02f1096b1ca7d709ffd669f620c13d",
-      "name": "Munki Auto Trigger",
-      "type": "rootscript",
+      "donotwait": true, 
+      "file": "/Library/installapplications/munki_auto_trigger.py", 
+      "hash": "c80d8abc1b2db996426608d7c34a3ac7cede99ba6d67021c7f35c0357958fe95", 
+      "name": "Munki Auto Trigger", 
+      "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/munki_auto_trigger.py"
-    },
+    }, 
     {
-      "file": "/Library/Application Support/installapplications/userscripts/dockutil.py",
-      "hash": "1a8e8559e40c672ad63ecf136c31db4d2dc97a2bef8002a16497fa08bfbf6819",
-      "name": "Dockutil User",
-      "type": "userscript",
+      "file": "/Library/installapplications/userscripts/dockutil.py", 
+      "hash": "5f97104ff825343292930c5146cfad14cf3cf174ce60367c04f3cb851198f387", 
+      "name": "Dockutil User", 
+      "type": "userscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/user/dockutil.py"
-    },
+    }, 
     {
-      "file": "/Library/Application Support/installapplications/depnotify_end.py",
-      "hash": "8654428ada3b861e07ef46bbb160dc06be2ea62b3d961faccb6a8fe7539f6a65",
-      "name": "DEPNotify End",
-      "type": "rootscript",
+      "file": "/Library/installapplications/munki_launchd_loader.py", 
+      "hash": "7be929b918f78dc4651938c45e59c2709b20a5eaa05d5f3b1c85b6e68faae2e1", 
+      "name": "Munki LaunchD Loader", 
+      "type": "rootscript", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/munki_launchd_loader.py"
+    }, 
+    {
+      "file": "/Library/installapplications/depnotify_end.py", 
+      "hash": "4ffa4b4d909872ad4b1506725113f39db38a48f3a6298bfa8fccda3481d9bace", 
+      "name": "DEPNotify End", 
+      "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/depnotify_end.py"
     }
   ]

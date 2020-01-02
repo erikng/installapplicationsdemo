@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadIdentifier</key>
+	<string>com.installapplicationsdemo.crypt</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>775DA0A6-5566-4A82-811B-C7ECC518C711</string>
+	<key>PayloadOrganization</key>
+	<string>InstallApplications Demo</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadDisplayName</key>
+	<string>Crypt</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.grahamgilbert.crypt</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>com.installapplicationsdemo.crypt</string>
+			<key>PayloadUUID</key>
+			<string>A08CFA0E-A779-4F91-9B41-EEDA985AC5ED</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>Crypt</string>
+			<key>RemovePlist</key>
+			<false/>
+			<key>RotateUsedKey</key>
+			<true/>
+			<key>ServerURL</key>
+			<string>https://www.github.com/erikng/installapplicationsdemo</string>
+			<key>ValidateKey</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

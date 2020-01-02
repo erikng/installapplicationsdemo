@@ -6,22 +6,16 @@
 	<string>com.erikng.installapplications</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/bin/python</string>
-		<string>/Library/Application Support/installapplications/installapplications.py</string>
+		<string>/Library/installapplications/Python.framework/Versions/3.8/bin/python3</string>
+		<string>/Library/installapplications/installapplications.py</string>
 		<string>--jsonurl</string>
 		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/demo.json</string>
-		<string>--depnotify</string>
-		<string>Command: WindowTitle: InstallApplicationsDemo</string>
-		<string>Command: Image: /Applications/Launchpad.app/Contents/Resources/Launchpad.icns</string>
-		<string>Status: Configuring Machine...</string>
-		<string>DEPNotifyPath: /Applications/Utilities/DEPNotify.app</string>
-		<string>DEPNotifyArguments: -munki</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardOutPath</key>
-	<string>/var/log/installapplications.log</string>
+	<string>/var/log/installapplications/installapplications.log</string>
 	<key>StandardErrorPath</key>
-	<string>/var/log/installapplications.log</string>
+	<string>/var/log/installapplications/installapplications.log</string>
 </dict>
 </plist>

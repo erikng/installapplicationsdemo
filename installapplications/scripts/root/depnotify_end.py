@@ -1,4 +1,6 @@
-#!/usr/bin/python
+#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+'''DEPNotify end demo code'''
+# -*- coding: utf-8 -*-
 
 # A simple python function for writing to DEPNotify's log file.
 # In order to pass more complex strings, you must use r"TEXT". r tells python
@@ -8,14 +10,16 @@
 
 
 def deplog(text):
+    '''Add a line to the depnotify file'''
     depnotify = "/private/var/tmp/depnotify.log"
     with open(depnotify, "a+") as log:
         log.write(text + "\n")
 
 
 def main():
-    deplog("Command: Logout: Please logout now to start the disk encryption "
-           "process.")
+    '''Main thread'''
+    deplog("Status: Machine is configured!")
+    deplog('Command: Logout: Please logout now to start the disk encryption.')
 
 
 if __name__ == '__main__':

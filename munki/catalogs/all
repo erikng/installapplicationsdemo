@@ -10,21 +10,23 @@
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>DEP</string>
+		<string>Managed Software Center</string>
 		<key>description</key>
 		<string></string>
 		<key>developer</key>
-		<string></string>
+		<string>Greg Neagle</string>
 		<key>display_name</key>
-		<string></string>
+		<string>Munki (App)</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
 		<key>installed_size</key>
-		<integer>4766</integer>
+		<integer>28830</integer>
 		<key>installer_item_hash</key>
-		<string>7ba8c82fe85b3c99199a5752133b950e803fe66bbfb8822612d9440c58703458</string>
+		<string>3d78fc3685fdd1ac3b7d95b4f8de9161a7a488ed6b0a5658c670c3a4f14c757f</string>
 		<key>installer_item_location</key>
-		<string>munkitools_app-4.7.3445.pkg</string>
+		<string>munkitools_app-5.1.0.3873.pkg</string>
 		<key>installer_item_size</key>
-		<integer>3280</integer>
+		<integer>11421</integer>
 		<key>minimum_os_version</key>
 		<string>10.5.0</string>
 		<key>name</key>
@@ -33,11 +35,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>4766</integer>
+				<integer>28830</integer>
 				<key>packageid</key>
 				<string>com.googlecode.munki.app</string>
 				<key>version</key>
-				<string>4.7.3445</string>
+				<string>5.1.0.3873</string>
 			</dict>
 		</array>
 		<key>unattended_install</key>
@@ -49,7 +51,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>4.7.3445</string>
+		<string>5.1.0.3873</string>
 	</dict>
 	<dict>
 		<key>RestartAction</key>
@@ -61,13 +63,280 @@
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>DEP</string>
+		<string>Encryption</string>
 		<key>description</key>
 		<string></string>
 		<key>developer</key>
-		<string></string>
+		<string>Graham Gilbert</string>
 		<key>display_name</key>
+		<string>Crypt</string>
+		<key>installed_size</key>
+		<integer>12666</integer>
+		<key>installer_item_hash</key>
+		<string>ecfb1d0632953cde8d95676b6d2812590fc515cd96709d0af125486917f72b32</string>
+		<key>installer_item_location</key>
+		<string>Crypt-3.3.0.178.pkg</string>
+		<key>installer_item_size</key>
+		<integer>4717</integer>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>crypt</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>12666</integer>
+				<key>packageid</key>
+				<string>com.grahamgilbert.Crypt</string>
+				<key>version</key>
+				<string>3.3.0.178</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.3.0.178</string>
+	</dict>
+	<dict>
+		<key>PayloadIdentifier</key>
+		<string>com.installapplicationsdemo.munki</string>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>Managed Software Center</string>
+		<key>description</key>
+		<string>Management file Munki</string>
+		<key>developer</key>
+		<string>Erik Gomez</string>
+		<key>display_name</key>
+		<string>Munki</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
+		<key>installer_item_hash</key>
+		<string>51bedfc8e82e28a30d0b3dfd0350a3b17f59e396183f544a59c04dc05afed601</string>
+		<key>installer_item_location</key>
+		<string>ManagedInstalls-1.1.mobileconfig</string>
+		<key>installer_item_size</key>
+		<integer>1</integer>
+		<key>installer_type</key>
+		<string>profile</string>
+		<key>minimum_munki_version</key>
+		<string>2.2</string>
+		<key>minimum_os_version</key>
+		<string>10.7</string>
+		<key>name</key>
+		<string>ManagedInstalls.mobileconfig</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_profile</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>Managed Software Center</string>
+		<key>description</key>
 		<string></string>
+		<key>developer</key>
+		<string>Greg Neagle</string>
+		<key>display_name</key>
+		<string>Munki (Embedded Python)</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
+		<key>installed_size</key>
+		<integer>83516</integer>
+		<key>installer_item_hash</key>
+		<string>d54f7581dfcd8b199714ff821b27e0d5d3c45fa4c367722e87bbe963fa9e8f72</string>
+		<key>installer_item_location</key>
+		<string>munkitools_python-3.7.4.pkg</string>
+		<key>installer_item_size</key>
+		<integer>25199</integer>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>munkitools_python</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>83516</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.python</string>
+				<key>version</key>
+				<string>3.7.4</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.7.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>Managed Software Center</string>
+		<key>description</key>
+		<string></string>
+		<key>developer</key>
+		<string>Greg Neagle</string>
+		<key>display_name</key>
+		<string>Munki (App Usage)</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
+		<key>installed_size</key>
+		<integer>25</integer>
+		<key>installer_item_hash</key>
+		<string>371eacefd9d0d6dd558ce772556b2f0b52b1a0e1a3772ab5a1a89b36e5e11aaf</string>
+		<key>installer_item_location</key>
+		<string>munkitools_app_usage-4.0.0.3881.pkg</string>
+		<key>installer_item_size</key>
+		<integer>8</integer>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>munkitools_app_usage</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>25</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app_usage</string>
+				<key>version</key>
+				<string>4.0.0.3881</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.0.0.3881</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>Web Browsers</string>
+		<key>description</key>
+		<string></string>
+		<key>developer</key>
+		<string>Google</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>9abc6ab31aedf6e05836ff1855a7b94e2571ecf9074ac970b0920ee83559156a</string>
+		<key>installer_item_location</key>
+		<string>GoogleChrome-79.0.3945.79.dmg</string>
+		<key>installer_item_size</key>
+		<integer>82186</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>79.0.3945.79</string>
+				<key>CFBundleVersion</key>
+				<string>3945.79</string>
+				<key>minosversion</key>
+				<string>10.10.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.10.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>79.0.3945.79</string>
+	</dict>
+	<dict>
+		<key>RestartAction</key>
+		<string>RequireRestart</string>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>Managed Software Center</string>
+		<key>description</key>
+		<string></string>
+		<key>developer</key>
+		<string>Greg Neagle</string>
+		<key>display_name</key>
+		<string>Munki (LaunchD)</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
 		<key>installed_size</key>
 		<integer>10</integer>
 		<key>installer_item_hash</key>
@@ -110,168 +379,23 @@
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>DEP</string>
+		<string>Managed Software Center</string>
 		<key>description</key>
 		<string></string>
 		<key>developer</key>
-		<string></string>
+		<string>Greg Neagle</string>
 		<key>display_name</key>
-		<string>Dockutil</string>
+		<string>Munki (Core)</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
 		<key>installed_size</key>
-		<integer>33</integer>
+		<integer>987</integer>
 		<key>installer_item_hash</key>
-		<string>111e4dd1f42176e4a383bcd4376a9b4545b02be63d88664749f937b321346f4c</string>
+		<string>79c3c585a0ba79909df45a8f2c739a8e836529d7d875d6c3fc5d21e212c5a2af</string>
 		<key>installer_item_location</key>
-		<string>dockutil-2.0.6.pkg</string>
+		<string>munkitools_core-4.0.0.3881.pkg</string>
 		<key>installer_item_size</key>
-		<integer>12</integer>
-		<key>minimum_os_version</key>
-		<string>10.5.0</string>
-		<key>name</key>
-		<string>dockutil</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>33</integer>
-				<key>packageid</key>
-				<string>com.installapplicationsdemo.dockutil</string>
-				<key>version</key>
-				<string>2.0.6</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>2.0.6</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>production</string>
-		</array>
-		<key>category</key>
-		<string>DEP</string>
-		<key>description</key>
-		<string></string>
-		<key>developer</key>
-		<string></string>
-		<key>display_name</key>
-		<string></string>
-		<key>installed_size</key>
-		<integer>10</integer>
-		<key>installer_item_hash</key>
-		<string>6feee0136d78fdd9b68cd9bf56d6e2b95c0572411b3617ae74d57858eb148453</string>
-		<key>installer_item_location</key>
-		<string>munkitools_app_usage-3.1.1.3447.pkg</string>
-		<key>installer_item_size</key>
-		<integer>4</integer>
-		<key>minimum_os_version</key>
-		<string>10.5.0</string>
-		<key>name</key>
-		<string>munkitools_app_usage</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>10</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.app_usage</string>
-				<key>version</key>
-				<string>3.1.1.3447</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.1.1.3447</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>production</string>
-		</array>
-		<key>category</key>
-		<string>DEP</string>
-		<key>description</key>
-		<string></string>
-		<key>developer</key>
-		<string></string>
-		<key>display_name</key>
-		<string></string>
-		<key>installed_size</key>
-		<integer>12651</integer>
-		<key>installer_item_hash</key>
-		<string>7e9f0b6a2a6fd5ac8243323ab92b212c807f1e0cbeb2fc736a8c828baf101a55</string>
-		<key>installer_item_location</key>
-		<string>crypt-3.1.0.119.pkg</string>
-		<key>installer_item_size</key>
-		<integer>4496</integer>
-		<key>minimum_os_version</key>
-		<string>10.5.0</string>
-		<key>name</key>
-		<string>crypt</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>12651</integer>
-				<key>packageid</key>
-				<string>com.grahamgilbert.Crypt</string>
-				<key>version</key>
-				<string>3.1.0.119</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.1.0.119</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>production</string>
-		</array>
-		<key>category</key>
-		<string>DEP</string>
-		<key>description</key>
-		<string></string>
-		<key>developer</key>
-		<string></string>
-		<key>display_name</key>
-		<string></string>
-		<key>installed_size</key>
-		<integer>857</integer>
-		<key>installer_item_hash</key>
-		<string>9fa295fccb24369f4d6296a170fca5ec26f4bae46138fb58579ac24fdfc5b5cb</string>
-		<key>installer_item_location</key>
-		<string>munkitools_core-3.1.1.3447.pkg</string>
-		<key>installer_item_size</key>
-		<integer>188</integer>
+		<integer>217</integer>
 		<key>minimum_os_version</key>
 		<string>10.5.0</string>
 		<key>name</key>
@@ -280,11 +404,11 @@
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>857</integer>
+				<integer>987</integer>
 				<key>packageid</key>
 				<string>com.googlecode.munki.core</string>
 				<key>version</key>
-				<string>3.1.1.3447</string>
+				<string>4.0.0.3881</string>
 			</dict>
 		</array>
 		<key>unattended_install</key>
@@ -296,7 +420,7 @@
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>3.1.1.3447</string>
+		<string>4.0.0.3881</string>
 	</dict>
 	<dict>
 		<key>PayloadIdentifier</key>
@@ -308,17 +432,17 @@
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>DEP</string>
+		<string>Encryption</string>
 		<key>description</key>
-		<string></string>
+		<string>Management file for Crypt</string>
 		<key>developer</key>
-		<string></string>
+		<string>Erik Gomez</string>
 		<key>display_name</key>
 		<string>Crypt</string>
 		<key>installer_item_hash</key>
-		<string>764f8cc3e3200914d3db4ef835ebbaa57fb8ae7a3c93f68460f820f283647363</string>
+		<string>81807f38508d25d77e4fe5af6004eefc62ef1d2cfd7ba032f92912fd530ce8e5</string>
 		<key>installer_item_location</key>
-		<string>Crypt-1.0.mobileconfig</string>
+		<string>Crypt-1.1.mobileconfig</string>
 		<key>installer_item_size</key>
 		<integer>1</integer>
 		<key>installer_type</key>
@@ -337,50 +461,12 @@
 		<string>remove_profile</string>
 		<key>uninstallable</key>
 		<true/>
-		<key>version</key>
-		<string>1.0</string>
-	</dict>
-	<dict>
-		<key>PayloadIdentifier</key>
-		<string>com.installapplicationsdemo.munki</string>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
+		<key>update_for</key>
 		<array>
-			<string>production</string>
+			<string>crypt</string>
 		</array>
-		<key>category</key>
-		<string>DEP</string>
-		<key>description</key>
-		<string></string>
-		<key>developer</key>
-		<string></string>
-		<key>display_name</key>
-		<string>Munki</string>
-		<key>installer_item_hash</key>
-		<string>6a2c99d52204770a8e024e2b9213585adcab4b319f649ea395519ab86066efa1</string>
-		<key>installer_item_location</key>
-		<string>ManagedInstalls-1.0.mobileconfig</string>
-		<key>installer_item_size</key>
-		<integer>1</integer>
-		<key>installer_type</key>
-		<string>profile</string>
-		<key>minimum_munki_version</key>
-		<string>2.2</string>
-		<key>minimum_os_version</key>
-		<string>10.7</string>
-		<key>name</key>
-		<string>ManagedInstalls.mobileconfig</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_profile</string>
-		<key>uninstallable</key>
-		<true/>
 		<key>version</key>
-		<string>1.0</string>
+		<string>1.1</string>
 	</dict>
 </array>
 </plist>
