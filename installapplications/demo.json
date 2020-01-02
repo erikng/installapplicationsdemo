@@ -116,7 +116,7 @@
     }, 
     {
       "file": "/Library/installapplications/depnotify_end.py", 
-      "hash": "37b400a3604198e8f5ecc9af4e16e8f0b708ed7f236a53dba335aca91f09593f", 
+      "hash": "4ffa4b4d909872ad4b1506725113f39db38a48f3a6298bfa8fccda3481d9bace", 
       "name": "DEPNotify End", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/depnotify_end.py"

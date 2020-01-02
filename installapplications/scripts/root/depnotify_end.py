@@ -18,6 +18,7 @@ def deplog(text):
 
 def main():
     '''Main thread'''
+    deplog("Status: Machine is configured!")
     deplog('Command: Logout: Please logout now to start the disk encryption.')
 
 
