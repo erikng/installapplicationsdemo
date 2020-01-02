@@ -36,6 +36,13 @@ item-type='package' \
 item-url="${PKGSURL}/munkitools_core-4.0.0.3881.pkg" \
 script-do-not-wait=False \
 --item \
+item-name='Dockutil Python3' \
+item-path="${PKGSDIR}/dockutil-3.0.pkg" \
+item-stage='setupassistant' \
+item-type='package' \
+item-url="${PKGSURL}/dockutil-3.0.pkg" \
+script-do-not-wait=False \
+--item \
 item-name='DEPNotify' \
 item-path="${PKGSDIR}/DEPNotify-1.1.5.pkg" \
 item-stage='setupassistant' \
