@@ -93,13 +93,6 @@
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_bootstrap.py"
     }, 
     {
-      "file": "/Library/installapplications/munki_launchd_loader.py", 
-      "hash": "7be929b918f78dc4651938c45e59c2709b20a5eaa05d5f3b1c85b6e68faae2e1", 
-      "name": "Munki LaunchD Loader", 
-      "type": "rootscript", 
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_launchd_loader.py"
-    }, 
-    {
       "donotwait": true, 
       "file": "/Library/installapplications/munki_auto_trigger.py", 
       "hash": "c80d8abc1b2db996426608d7c34a3ac7cede99ba6d67021c7f35c0357958fe95", 
@@ -113,6 +106,13 @@
       "name": "Dockutil User", 
       "type": "userscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/user/dockutil.py"
+    }, 
+    {
+      "file": "/Library/installapplications/munki_launchd_loader.py", 
+      "hash": "7be929b918f78dc4651938c45e59c2709b20a5eaa05d5f3b1c85b6e68faae2e1", 
+      "name": "Munki LaunchD Loader", 
+      "type": "rootscript", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_launchd_loader.py"
     }, 
     {
       "file": "/Library/installapplications/depnotify_end.py", 

@@ -92,13 +92,6 @@ item-type='rootscript' \
 item-url="${ROOTSCRIPTSURL}/munki_bootstrap.py" \
 script-do-not-wait=False \
 --item \
-item-name='Munki LaunchD Loader' \
-item-path="${ROOTSCRIPTSDIR}/munki_launchd_loader.py" \
-item-stage='userland' \
-item-type='rootscript' \
-item-url="${ROOTSCRIPTSURL}/munki_launchd_loader.py" \
-script-do-not-wait=False \
---item \
 item-name='Munki Auto Trigger' \
 item-path="${ROOTSCRIPTSDIR}/munki_auto_trigger.py" \
 item-stage='userland' \
@@ -111,6 +104,13 @@ item-path="${USERSCRIPTSDIR}/dockutil.py" \
 item-stage='userland' \
 item-type='userscript' \
 item-url="${USERSCRIPTSURL}/dockutil.py" \
+script-do-not-wait=False \
+--item \
+item-name='Munki LaunchD Loader' \
+item-path="${ROOTSCRIPTSDIR}/munki_launchd_loader.py" \
+item-stage='userland' \
+item-type='rootscript' \
+item-url="${ROOTSCRIPTSURL}/munki_launchd_loader.py" \
 script-do-not-wait=False \
 --item \
 item-name='DEPNotify End' \
