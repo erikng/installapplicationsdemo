@@ -43,6 +43,20 @@ item-type='package' \
 item-url="${PKGSURL}/DEPNotify-1.1.5.pkg" \
 script-do-not-wait=False \
 --item \
+item-name='DEPNotify Customization' \
+item-path="${ROOTSCRIPTSDIR}/depnotify_customization.py" \
+item-stage='setupassistant' \
+item-type='rootscript' \
+item-url="${ROOTSCRIPTSURL}/depnotify_customization.py" \
+script-do-not-wait=False \
+--item \
+item-name='DEPNotify User Launcher' \
+item-path="${USERSCRIPTSDIR}/depnotify_user_launcher.py" \
+item-stage='userland' \
+item-type='userscript' \
+item-url="${USERSCRIPTSURL}/depnotify_user_launcher.py" \
+script-do-not-wait=False \
+--item \
 item-name='Caffeinate Machine' \
 item-path="${ROOTSCRIPTSDIR}/caffeinate.py" \
 item-stage='userland' \
@@ -51,10 +65,10 @@ item-url="${ROOTSCRIPTSURL}/caffeinate.py" \
 script-do-not-wait=True \
 --item \
 item-name='Bless VM' \
-item-path="${ROOTSCRIPTSDIR}/high_sierra_vm_bless.py" \
+item-path="${ROOTSCRIPTSDIR}/bless_vm.py" \
 item-stage='userland' \
 item-type='rootscript' \
-item-url="${ROOTSCRIPTSURL}/high_sierra_vm_bless.py" \
+item-url="${ROOTSCRIPTSURL}/bless_vm.py" \
 script-do-not-wait=False \
 --item \
 item-name='Munki Bootsrap' \

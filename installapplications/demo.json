@@ -2,7 +2,7 @@
   "preflight": [
     {
       "file": "/Library/installapplications/preflight.py", 
-      "hash": "7c41b354f8ea37317b6103f72dec7baead2f844cad2ca63ac10b02501458a66a", 
+      "hash": "7a3f7c11e7fc2f6114a603b505450d6a31568e51cb6ba07b4ba715c2ccf2713f", 
       "name": "Preflight", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/preflight.py"
@@ -35,34 +35,48 @@
       "type": "package", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/pkgs/DEPNotify-1.1.5.pkg", 
       "version": "1.1.5"
+    }, 
+    {
+      "file": "/Library/installapplications/depnotify_customization.py", 
+      "hash": "df09250276108bbc7a7cde53c5d27c232aa9324c640f7aa922191f8686315d8f", 
+      "name": "DEPNotify Customization", 
+      "type": "rootscript", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/depnotify_customization.py"
     }
   ], 
   "userland": [
     {
+      "file": "/Library/installapplications/userscripts/depnotify_user_launcher.py", 
+      "hash": "93563c03c2a9f1fcfe69bbb1a6606ab433881659d458f535292c13c8eb4e4005", 
+      "name": "DEPNotify User Launcher", 
+      "type": "userscript", 
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/user/depnotify_user_launcher.py"
+    }, 
+    {
       "donotwait": true, 
       "file": "/Library/installapplications/caffeinate.py", 
-      "hash": "92bb078979917a745febdfa10256831dfb4fb46ed0628af3b1e04bf5bbede910", 
+      "hash": "ef709fe70fedade07c7db428f5276a7e6fe2d33ff6848f477d0d5b4b96cdf19e", 
       "name": "Caffeinate Machine", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/caffeinate.py"
     }, 
     {
-      "file": "/Library/installapplications/high_sierra_vm_bless.py", 
-      "hash": "52df572785e5b79806032049000450da463ecceeecc83671e1bc6bd61996248f", 
+      "file": "/Library/installapplications/bless_vm.py", 
+      "hash": "48099743002fb77a11dcbb43ff27aadc342b3b6b16a5260e3ab577e350cba054", 
       "name": "Bless VM", 
       "type": "rootscript", 
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/high_sierra_vm_bless.py"
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/bless_vm.py"
     }, 
     {
       "file": "/Library/installapplications/munki_bootstrap.py", 
-      "hash": "78d00124021f8c6d8fbaf5d35a249715be3ba1206a8227bf9b8f2213f128fcf8", 
+      "hash": "ba9b38bf05d12716093e87c0de7a0b24f8cffe7e3a456b19ee0fcb27a369e7c1", 
       "name": "Munki Bootsrap", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_bootstrap.py"
     }, 
     {
       "file": "/Library/installapplications/munki_launchd_loader.py", 
-      "hash": "954b7cec547dcc4e638991301ba600419e2b6aed15dc09ee412b1ba6218d31af", 
+      "hash": "4d5e081212f4c921924e02e1a82fe4d09c671601f8088d8b04691bd3e92ef133", 
       "name": "Munki LaunchD Loader", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_launchd_loader.py"
@@ -70,21 +84,21 @@
     {
       "donotwait": true, 
       "file": "/Library/installapplications/munki_auto_trigger.py", 
-      "hash": "0ac1bef0c51c3eb2da95418abc691eb1eb02f1096b1ca7d709ffd669f620c13d", 
+      "hash": "9e06e5e0a2c2f6013ad055e8c75c7a94fe351ba359d4b98431c244851978c7ee", 
       "name": "Munki Auto Trigger", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_auto_trigger.py"
     }, 
     {
       "file": "/Library/installapplications/userscripts/dockutil.py", 
-      "hash": "1a8e8559e40c672ad63ecf136c31db4d2dc97a2bef8002a16497fa08bfbf6819", 
+      "hash": "5f97104ff825343292930c5146cfad14cf3cf174ce60367c04f3cb851198f387", 
       "name": "Dockutil User", 
       "type": "userscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/user/dockutil.py"
     }, 
     {
       "file": "/Library/installapplications/depnotify_end.py", 
-      "hash": "8654428ada3b861e07ef46bbb160dc06be2ea62b3d961faccb6a8fe7539f6a65", 
+      "hash": "37b400a3604198e8f5ecc9af4e16e8f0b708ed7f236a53dba335aca91f09593f", 
       "name": "DEPNotify End", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/depnotify_end.py"

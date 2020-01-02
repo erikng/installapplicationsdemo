@@ -1,6 +1,7 @@
-#!/usr/bin/python
+#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+'''Bless a Virtual Machine'''
 
-# This script blesses the booted volume on 10.13 APFS volumes for virtual
+# This script blesses the booted volume on 10.13+ APFS volumes for virtual
 # machines. This is due to either a bug in macOS or virtual machine tools
 # like VMware Fusion that causes the device to become unable to boot after
 # enabling FileVault.
@@ -18,12 +19,12 @@ import plistlib
 import subprocess
 
 
-def getOSVersion():
-    """Return OS version."""
+def get_os_version():
+    '''Return OS version.'''
     return platform.mac_ver()[0]
 
 
-def sysctl(name, is_string=True):
+def sysctl(name):
     '''Wrapper for sysctl so we don't have to use subprocess'''
     size = c_uint(0)
     # Find out how big our buffer will be
@@ -33,23 +34,21 @@ def sysctl(name, is_string=True):
     buf = create_string_buffer(size.value)
     # Re-run, but provide the buffer
     libc.sysctlbyname(name, buf, byref(size), None, 0)
-    if is_string:
-        return buf.value
-    else:
-        return buf.raw
+    return buf.value
 
 
-def isVirtualMachine():
+def is_virtual_machine():
     '''Returns True if this is a VM, False otherwise'''
     cpu_features = sysctl('machdep.cpu.features').split()
     return 'VMM' in cpu_features
 
 
-def getMachineType():
+def get_machine_type():
     '''Return the machine type: physical, vmware, virtualbox, parallels or
     unknown_virtual'''
-    if not isVirtualMachine():
-        return 'physical'
+    vm_type = 'physical'
+    if not is_virtual_machine():
+        return vm_type
 
     # this is a virtual machine; see if we can tell which vendor
     try:
@@ -57,16 +56,19 @@ def getMachineType():
                                  'SPEthernetDataType', 'SPHardwareDataType'],
                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = proc.communicate()[0]
-        plist = plistlib.readPlistFromString(output)
+        plist = plistlib.loads(output)
         br_version = plist[1]['_items'][0]['boot_rom_version']
+
         if 'VMW' in br_version:
-            return 'vmware'
+            vm_type = 'vmware'
         elif 'VirtualBox' in br_version:
-            return 'virtualbox'
+            vm_type = 'virtualbox'
         else:
             ethernet_vid = plist[0]['_items'][0]['spethernet_vendor-id']
             if '0x1ab8' in ethernet_vid:
-                return 'parallels'
+                vm_type = 'parallels'
+
+        return vm_type
 
     except (IOError, KeyError, OSError):
         pass
@@ -75,17 +77,21 @@ def getMachineType():
 
 
 def bless(path):
+    # pylint: disable=broad-except
+    '''Bless a folder path'''
     try:
         blesscmd = ['/usr/sbin/bless', '--folder', path, '--setBoot']
         proc = subprocess.Popen(blesscmd, stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE)
-        output, err = proc.communicate()
+        output = proc.communicate()[0]
         return output
-    except Exception:
+    except BaseException:
         return None
+    # pylint: enable=broad-except
 
 
-def fileSystemType(path):
+def get_filesystem_type(path):
+    '''Get the file system type'''
     filetype = ''
     try:
         diskutilcmd = ['/usr/sbin/diskutil', 'info', '-plist', path]
@@ -95,14 +101,15 @@ def fileSystemType(path):
     except (IOError, OSError):
         output = None
     if output:
-        outplist = plistlib.readPlistFromString(output.strip())
+        outplist = plistlib.loads(output.strip())
         filetype = outplist.get('FilesystemType', '')
     return filetype
 
 
 def main():
-    if ('10.13' in getOSVersion() and 'apfs' in fileSystemType('/') and
-            getMachineType() is not 'physical'):
+    '''Main thread'''
+    if ('10.13' or '10.14' or '10.15' in get_os_version() and 'apfs' in get_filesystem_type('/') and
+            get_machine_type() != 'physical'):
         bless('/Volumes/Macintosh HD/System/Library/CoreServices')
 
 

@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+'''Munki bootstrap demo code'''
 
 # This script is used to bootstrap munki from a root process.
 # Rather than rely on mobileconfigs (that may come from other systems), some
@@ -12,97 +13,69 @@
 # the munki_auto_trigger.py script (found in this repo) at the end of your
 # DEP run.
 
-# To speed up install time and reduce the number of https calls, we are
-# pre-installing the icons (not with this script), moving them to a temporary
-# place and reverting them once munki is done.
-
 # Finally a fake null value is sent to munki's preference for LastCheckDate.
 # Using this in conjuction with the yo_action_example.py script will cause
 # Managed Software Center to immediately check for an update when it's first
 # opened.
 
-# Written by Erik Gomez. Foundation classes and plist functions written by
-# Greg Neagle and adapted for use.
+# Written by Erik Gomez.
 
-from distutils.dir_util import copy_tree
-from Foundation import (CFPreferencesSetValue, kCFPreferencesAnyUser,
-                        kCFPreferencesCurrentHost, NSData,
-                        NSPropertyListSerialization,
-                        NSPropertyListMutableContainers)
-
-import os
-import shutil
 import subprocess
+# pylint: disable=import-error
+from Foundation import (CFPreferencesSetValue, kCFPreferencesAnyUser,
+                        kCFPreferencesCurrentHost)
+# pylint: enable=import-error
 
 
-class FoundationPlistException(Exception):
-    """Basic exception for plist errors"""
-    pass
-
-
-class NSPropertyListSerializationException(FoundationPlistException):
-    """Read/parse error for plists"""
-    pass
-
-
-class NSPropertyListWriteException(FoundationPlistException):
-    """Write error for plists"""
-    pass
-
-
-def readPlist(filepath):
-    # Credit to Greg Neagle
-    plistData = NSData.dataWithContentsOfFile_(filepath)
-    dataObject, dummy_plistFormat, error = (
-        NSPropertyListSerialization.
-        propertyListFromData_mutabilityOption_format_errorDescription_(
-            plistData, NSPropertyListMutableContainers, None, None))
-    if dataObject is None:
-        if error:
-            error = error.encode('ascii', 'ignore')
-        else:
-            error = "Unknown error"
-        errmsg = "%s in file %s" % (error, filepath)
-        raise NSPropertyListSerializationException(errmsg)
-    else:
-        return dataObject
-
-
-def munkirun(id):
-    cmd = ['/usr/local/munki/managedsoftwareupdate', '--id', id,
-           '--munkipkgsonly']
-    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE,
-                            stderr=subprocess.PIPE)
-    output, err = proc.communicate()
-    return output
+def munkirun(identifier):
+    # pylint: disable=broad-except
+    '''Only download munki pkgs via a specific manifest'''
+    try:
+        cmd = ['/usr/local/munki/managedsoftwareupdate', '--id', identifier,
+               '--munkipkgsonly']
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE)
+        output = proc.communicate()[0]
+        return output
+    except BaseException:
+        return None
+    # pylint: enable=broad-except
 
 
 def munkiinstall():
-    cmd = ['/usr/local/munki/managedsoftwareupdate', '--installonly']
-    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE,
-                            stderr=subprocess.PIPE)
-    output, err = proc.communicate()
-    return output
+    # pylint: disable=broad-except
+    '''Only install munki pkgs'''
+    try:
+        cmd = ['/usr/local/munki/managedsoftwareupdate', '--installonly']
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE)
+        output = proc.communicate()[0]
+        return output
+    except BaseException:
+        return None
+    # pylint: enable=broad-except
 
 
 def munkiappleupdates():
-    cmd = ['/usr/local/munki/managedsoftwareupdate', '--applesuspkgsonly']
-    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE,
-                            stderr=subprocess.PIPE)
-    output, err = proc.communicate()
-    return output
+    # pylint: disable=broad-except
+    '''Download apple updates only'''
+    try:
+        cmd = ['/usr/local/munki/managedsoftwareupdate', '--applesuspkgsonly']
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE)
+        output = proc.communicate()[0]
+        return output
+    except BaseException:
+        return None
+    # pylint: enable=broad-except
 
 
 def main():
-    # Variables
-    munkiurl = 'https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/munki'  # noqa
+    '''Main thread'''
+    # pylint: disable=line-too-long
+    munkiurl = 'https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/munki'
+    # pylint: enable=line-too-long
     backupmanifest = 'production'
-    try:
-        if os.path.isdir('/Library/Managed Installs/icons'):
-            copy_tree('/Library/Managed Installs/icons',
-                      '/private/var/munkiicons')
-    except:  # noqa
-        pass
 
     # Set basic munki preferences
     CFPreferencesSetValue(
@@ -125,15 +98,6 @@ def main():
 
     # Install downloaded packages
     munkiinstall()
-
-    # Revert Munki icons
-    try:
-        if os.path.isdir('/private/var/munkiicons'):
-            copy_tree('/private/var/munkiicons',
-                      '/Library/Managed Installs/icons')
-            shutil.rmtree('/private/var/munkiicons')
-    except:  # noqa
-        pass
 
     CFPreferencesSetValue(
         'LastCheckDate', '',

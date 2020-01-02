@@ -1,5 +1,12 @@
 #!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
 '''Preflight demo script'''
+
+# A simple example to run a preflight or not if InstallApplications has ever ran
+# on the machine prior. You probably wouldn't want to do something like this in
+# production.
+
+# Written by Erik Gomez
+
 import plistlib
 import subprocess
 import sys
