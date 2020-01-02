@@ -10,6 +10,13 @@ import subprocess
 import os
 
 
+def deplog(text):
+    '''Add a line to the depnotify file'''
+    depnotify = "/private/var/tmp/depnotify.log"
+    with open(depnotify, "a+") as log:
+        log.write(text + "\n")
+
+
 def launchctld(identifier):
     '''Load a launchdaemon with the identifier specified'''
     launchd = identifier + '.plist'
@@ -26,6 +33,7 @@ def launchctld(identifier):
 
 def main():
     '''Main thread'''
+    deplog("Status: Configurating additional Managed Software Center settings...")
     launchctld('com.googlecode.munki.managedsoftwareupdate-check')
     launchctld('com.googlecode.munki.managedsoftwareupdate-install')
     launchctld('com.googlecode.munki.managedsoftwareupdate-manualcheck')

@@ -11,6 +11,14 @@
 
 import subprocess
 
+
+def deplog(text):
+    '''Add a line to the depnotify file'''
+    depnotify = "/private/var/tmp/depnotify.log"
+    with open(depnotify, "a+") as log:
+        log.write(text + "\n")
+
+
 def main():
     # pylint: disable=broad-except
     '''Main thread'''
@@ -18,6 +26,7 @@ def main():
     caffeinatecmd = ['/usr/bin/caffeinate', '-dimut', caffeinationtime]
     try:
         subprocess.Popen(caffeinatecmd)
+        deplog("Status: Caffeinating machine...")
     except BaseException:
         print('Could not caffeinate machine')
     # pylint: enable=broad-except

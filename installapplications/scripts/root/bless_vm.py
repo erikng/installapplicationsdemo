@@ -19,6 +19,13 @@ import plistlib
 import subprocess
 
 
+def deplog(text):
+    '''Add a line to the depnotify file'''
+    depnotify = "/private/var/tmp/depnotify.log"
+    with open(depnotify, "a+") as log:
+        log.write(text + "\n")
+
+
 def get_os_version():
     '''Return OS version.'''
     return platform.mac_ver()[0]
@@ -110,6 +117,7 @@ def main():
     '''Main thread'''
     if ('10.13' or '10.14' or '10.15' in get_os_version() and 'apfs' in get_filesystem_type('/') and
             get_machine_type() != 'physical'):
+        deplog("Status: Configurating Virtual Machine for encryption technology...")
         bless('/Volumes/Macintosh HD/System/Library/CoreServices')
 
 

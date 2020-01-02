@@ -20,6 +20,13 @@ import os
 import subprocess
 
 
+def deplog(text):
+    '''Add a line to the depnotify file'''
+    depnotify = "/private/var/tmp/depnotify.log"
+    with open(depnotify, "a+") as log:
+        log.write(text + "\n")
+
+
 def main():
     # pylint: disable=broad-except
     # pylint: disable=subprocess-popen-preexec-fn
@@ -27,6 +34,7 @@ def main():
     munkicheckcmd = ['/usr/local/munki/managedsoftwareupdate', '--auto']
     try:
         subprocess.Popen(munkicheckcmd, preexec_fn=os.setpgrp)
+        deplog("Status: Triggering Managed Software Center...")
     except BaseException:
         print('Could not trigger auto munki run')
     # pylint: enable=broad-except

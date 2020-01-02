@@ -73,28 +73,28 @@
     {
       "donotwait": true, 
       "file": "/Library/installapplications/caffeinate.py", 
-      "hash": "ef709fe70fedade07c7db428f5276a7e6fe2d33ff6848f477d0d5b4b96cdf19e", 
+      "hash": "6092601408cf71da4c2010edf992a1f0be4aee6e4461034ef9e3fc34f4e45c39", 
       "name": "Caffeinate Machine", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/caffeinate.py"
     }, 
     {
       "file": "/Library/installapplications/bless_vm.py", 
-      "hash": "48099743002fb77a11dcbb43ff27aadc342b3b6b16a5260e3ab577e350cba054", 
+      "hash": "1989392eefeea306f29e349d05b6ede868cbe975fe936443df39fd080655b1e4", 
       "name": "Bless VM", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/bless_vm.py"
     }, 
     {
       "file": "/Library/installapplications/munki_bootstrap.py", 
-      "hash": "ba9b38bf05d12716093e87c0de7a0b24f8cffe7e3a456b19ee0fcb27a369e7c1", 
+      "hash": "a5c691d8a29a592c6fa8da36f9043e60e5c43daf28e135daf13379bb01348685", 
       "name": "Munki Bootsrap", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_bootstrap.py"
     }, 
     {
       "file": "/Library/installapplications/munki_launchd_loader.py", 
-      "hash": "4d5e081212f4c921924e02e1a82fe4d09c671601f8088d8b04691bd3e92ef133", 
+      "hash": "7be929b918f78dc4651938c45e59c2709b20a5eaa05d5f3b1c85b6e68faae2e1", 
       "name": "Munki LaunchD Loader", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_launchd_loader.py"
@@ -102,7 +102,7 @@
     {
       "donotwait": true, 
       "file": "/Library/installapplications/munki_auto_trigger.py", 
-      "hash": "9e06e5e0a2c2f6013ad055e8c75c7a94fe351ba359d4b98431c244851978c7ee", 
+      "hash": "c80d8abc1b2db996426608d7c34a3ac7cede99ba6d67021c7f35c0357958fe95", 
       "name": "Munki Auto Trigger", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/munki_auto_trigger.py"

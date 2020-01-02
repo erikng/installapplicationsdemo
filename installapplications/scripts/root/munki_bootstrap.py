@@ -27,6 +27,13 @@ from Foundation import (CFPreferencesSetValue, kCFPreferencesAnyUser,
 # pylint: enable=import-error
 
 
+def deplog(text):
+    '''Add a line to the depnotify file'''
+    depnotify = "/private/var/tmp/depnotify.log"
+    with open(depnotify, "a+") as log:
+        log.write(text + "\n")
+
+
 def munkirun(identifier):
     # pylint: disable=broad-except
     '''Only download munki pkgs via a specific manifest'''
@@ -77,6 +84,8 @@ def main():
     # pylint: enable=line-too-long
     backupmanifest = 'production'
 
+    deplog("Status: Configurating basic Managed Software Center settings...")
+
     # Set basic munki preferences
     CFPreferencesSetValue(
         'InstallAppleSoftwareUpdates', True,
@@ -94,9 +103,13 @@ def main():
         kCFPreferencesAnyUser, kCFPreferencesCurrentHost)
 
     # Run Munki with manifest you want to use
+    deplog("Command: MainText: The Managed Software Center process may take a few minutes "
+           "to complete. Thanks for being patient!")
+    deplog("Status: Downloading applications from Managed Software Center...")
     munkirun('depdemo')
 
     # Install downloaded packages
+    deplog("Status: Installing applications from Managed Software Center...")
     munkiinstall()
 
     CFPreferencesSetValue(
