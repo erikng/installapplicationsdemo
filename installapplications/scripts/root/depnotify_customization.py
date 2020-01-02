@@ -39,7 +39,7 @@ def main():
             pass
         # pylint: enable=bare-except
     deplog("Command: WindowTitle: InstallApplications Demo")
-    deplog("Command: Image: %s") % icns_path
+    deplog("Command: Image: {}".format(icns_path))
     deplog("Status: Configuring Machine..")
 
 

@@ -47,7 +47,7 @@
     }, 
     {
       "file": "/Library/installapplications/depnotify_customization.py", 
-      "hash": "886c5a1796b5e5b1947b17a25ea970e0bb8476bbbbaf36b5d257112284c91de4", 
+      "hash": "1bdf23fea6a28c97dc6f683f42c20fee8b04d769b6d1db570c7771ad8eec9727", 
       "name": "DEPNotify Customization", 
       "type": "rootscript", 
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/python3/installapplications/scripts/root/depnotify_customization.py"
