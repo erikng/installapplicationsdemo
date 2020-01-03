@@ -8,7 +8,7 @@ Some interesting things to look at:
 - a script to bless VM's for use with FileVault encryption
 - a script to silently caffeinate a machine and continue on with provisioning
 - a script to customize DEPNotify, as well as examples in other scripts to further give information to the user
-- a script to bootstrap <unki with a specific "DEP" provisioning manifest
+- a script to bootstrap Munki with a specific "DEP" provisioning manifest
 - a script to silentely run Munki in "auto" mode after provisioning is complete
 - a script to enable Munki's LaunchDaemons without requiring a reboot, utilizing official Munki packages
 - a script to show a basic example of how the preflight works, enabling you to only run InstallApplications when needed
