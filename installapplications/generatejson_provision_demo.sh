@@ -11,7 +11,9 @@ PKGSURL="${BASEURL}/pkgs"
 ROOTSCRIPTSURL="${BASEURL}/scripts/root"
 USERSCRIPTSURL="${BASEURL}/scripts/user"
 
-/usr/bin/python ${GENERATEJSON} \
+/bin/chmod a+x ${GENERATEJSON}
+
+${GENERATEJSON} \
 --base-url ${BASEURL} \
 --output ~/Desktop \
 --item \
