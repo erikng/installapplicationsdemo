@@ -139,7 +139,7 @@ def main():
         plist_to_read = read_plist(plist_path)
         mod_count = int(plist_to_read.get('mod-count', 0))
         seconds_waited = 0
-        while mod_count < 2 and seconds_waited < 5:
+        while mod_count < 2 and seconds_waited < 60:
             print('Waiting for initial dock setup. mod-count is: %s' % mod_count)
             time.sleep(1)
             seconds_waited += 1
