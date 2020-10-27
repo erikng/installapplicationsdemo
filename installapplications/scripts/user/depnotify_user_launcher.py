@@ -1,12 +1,6 @@
-#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+#!/Library/installapplications/Python.framework/Versions/Current/bin/python3
 '''dockutil wrapper'''
-
 # Written by Erik Gomez
-# Lots of ideas taken from dockutil and munki
-
-# It should really be rewritten, but it works for now and is more stable
-# than the built in method offered by InstallApplications
-
 import os
 import platform
 import plistlib
@@ -16,7 +10,7 @@ import time
 
 
 def get_macos_version():
-    '''returns a tuple with the (major,minor,revision) numbers'''
+    """returns a tuple with the (major,minor,revision) numbers"""
     # OS X Yosemite return 10.10, so we will be happy with len(...) == 2, then add 0 for last number
     try:
         mac_ver = tuple(int(n) for n in platform.mac_ver()[0].split('.'))
@@ -29,20 +23,19 @@ def get_macos_version():
     return mac_ver
 
 
-def read_plist(plist_path):
-    '''returns a plist object read from a file path'''
+def read_plist(plist_path, macos_version):
+    """returns a plist object read from a file path"""
     # get a tempfile path for exporting our defaults data
     export_fifo = tempfile.mktemp()
     # make a fifo for defaults export in a temp file
     os.mkfifo(export_fifo)
     # export to the fifo
-    osx_version = get_macos_version()
-    if osx_version[1] >= 9:
+    if macos_version[1] >= 9:
         subprocess.Popen(
-            ['/usr/bin/defaults', 'export', plist_path, export_fifo]).communicate()
+            ['defaults', 'export', plist_path, export_fifo]).communicate()
         # convert the export to xml
         plist_string = subprocess.Popen(
-            ['/usr/bin/plutil', '-convert', 'xml1', export_fifo, '-o', '-'],
+            ['plutil', '-convert', 'xml1', export_fifo, '-o', '-'],
             stdout=subprocess.PIPE).stdout.read()
     else:
         try:
@@ -59,7 +52,7 @@ def read_plist(plist_path):
 
 
 def get_running_processes():
-    '''Returns a list of paths of running processes'''
+    """Returns a list of paths of running processes"""
     proc = subprocess.Popen(['/bin/ps', '-axo' 'comm='],
                             shell=False, stdin=subprocess.PIPE,
                             stdout=subprocess.PIPE,
@@ -89,8 +82,8 @@ def get_running_processes():
 
 
 def is_app_running(appname):
-    '''Tries to determine if the application in appname is currently
-    running'''
+    """Tries to determine if the application in appname is currently
+    running"""
     proc_list = get_running_processes()
     matching_items = []
     if appname.startswith('/'):
@@ -120,7 +113,7 @@ def is_app_running(appname):
 
 def launch_depnotify():
     '''Launch DEPNotify'''
-    dn_path = '/Applications/Utilities/DEPNotify.app'
+    dn_path = '/Library/Application Support/UberInternal/CPE/Utilities/DEPNotify.app'
     subprocess.call(['/usr/bin/open', dn_path, '--args', '-munki'])
 
 
@@ -130,13 +123,14 @@ def kill_depnotify():
 
 
 def main():
-    '''Main thread'''
+    '''Launch DEPNotify if IAs didnt do it'''
     plist_path = os.path.expanduser(
         '~/Library/Preferences/com.apple.dock.plist')
-    # Wait for mod-count to be > 1 because dock is still being setup by Apple.
-    # Apps shouldn't try and launch before this.
+    macos_version = get_macos_version()
+    # If we are modifying the currently logged in user's dock, wait for
+    # mod-count to be > 1 because dock is still being setup by Apple
     if os.stat(plist_path).st_uid == os.stat('/dev/console').st_uid:
-        plist_to_read = read_plist(plist_path)
+        plist_to_read = read_plist(plist_path, macos_version)
         mod_count = int(plist_to_read.get('mod-count', 0))
         seconds_waited = 0
         while mod_count < 2 and seconds_waited < 120:
@@ -144,14 +138,21 @@ def main():
             time.sleep(1)
             seconds_waited += 1
             print('Waited %s seconds so far' % seconds_waited)
-            plist_to_read = read_plist(plist_path)
+            plist_to_read = read_plist(plist_path, macos_version)
             mod_count = int(plist_to_read.get('mod-count', 0))
         if mod_count < 2:
             print('Timed out waiting for dock to be setup.')
 
+    # Cover both checks since we don't know what OS version will be returned
+    if macos_version[0] >= 11 or macos_version[1] >= 16:
+        print('Delaying DEPNotify Launch by 5 seconds due to Big Sur flakiness')
+        time.sleep(5)
+
     if is_app_running('DEPNotify'):
-        # If a "quit" command has previously been sent to DEPNotify, it will not
-        # update its status even if the log file is purged. Because of this, we force
+        # Since we no longer use InstallApplications to launch DEPNotify, if
+        # we are bootstrapping, it is more than likely due to a enrollment
+        # failure. If a "quit" command is sent to DEPNotify, it will not update
+        # its status even if the log file is purged. Because of this, we need
         # to relaunch DEPNotify so it will refresh.
         print('DEPNotify running - relaunching!')
         kill_depnotify()
