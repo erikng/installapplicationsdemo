@@ -22,6 +22,10 @@ launch_daemon_plist_name='com.erikng.installapplications'
 launch_agent_base_path='Library/LaunchAgents/'
 launch_daemon_base_path='Library/LaunchDaemons/'
 
+# If this is not exactly set to this permissions, it can not be loaded
+chmod 600 "$3${launch_agent_base_path}${launch_agent_plist_name}.plist"
+chmod 600 "$3${launch_daemon_base_path}${launch_daemon_plist_name}.plist"
+
 # Load agent if installing to a running system
 if [[ $3 == "/" ]] ; then
   # Fail the install if the admin forgets to change their paths and they don't exist.
