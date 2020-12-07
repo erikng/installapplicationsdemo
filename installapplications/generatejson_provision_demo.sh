@@ -1,6 +1,8 @@
 #!/bin/bash
 
-COREDIR=$(/usr/bin/dirname $0)
+# Not reliable working when zsh is active
+# COREDIR=$(/usr/bin/dirname $0)
+COREDIR=$( cd "$(dirname "$0")" ; pwd -P )
 JSON="${COREDIR}/demo.json"
 GENERATEJSON="${COREDIR}/generatejson.py"
 PKGSDIR="${COREDIR}/pkgs"
