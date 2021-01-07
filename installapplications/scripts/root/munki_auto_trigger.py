@@ -1,4 +1,4 @@
-#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+#!/Library/installapplications/Python.framework/Versions/Current/bin/python3
 '''Munki Auto trigger python example code'''
 
 # This script uses managedsoftwareupdate binary to run an auto run, which

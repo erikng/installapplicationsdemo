@@ -1,4 +1,4 @@
-#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+#!/Library/installapplications/Python.framework/Versions/Current/bin/python3
 '''dockutil wrapper'''
 
 # Python wrapper for dockutil. We use the --no-restart flag for most of this

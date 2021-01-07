@@ -1,4 +1,4 @@
-#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+#!/Library/installapplications/Python.framework/Versions/Current/bin/python3
 '''Preflight demo script'''
 
 # A simple example to run a preflight or not if InstallApplications has ever ran

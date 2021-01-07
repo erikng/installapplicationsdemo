@@ -1,4 +1,4 @@
-#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+#!/Library/installapplications/Python.framework/Versions/Current/bin/python3
 '''Munki LaunchDaemon loading demo example'''
 
 # A simple python function for loading munki's launchd items without

@@ -1,4 +1,4 @@
-#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+#!/Library/installapplications/Python.framework/Versions/Current/bin/python3
 '''Munki bootstrap demo code'''
 
 # This script is used to bootstrap munki from a root process.

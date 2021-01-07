@@ -1,7 +1,7 @@
 # InstallApplications Demo
 This repository is a full example of how to use [InstallApplications](https://github.com/erikng/installapplications) in a production environment.
 
-It has been updated for the new Python 3.8 embedded version of InstallApplications
+It has been updated for the new Python 3.9 embedded version of InstallApplications. This version should support M1 macs
 
 Some interesting things to look at:
 - a fork of [dockutil](https://github.com/kcrawford/dockutil) for use exclusively with the embedded Python

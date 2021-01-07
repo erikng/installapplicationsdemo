@@ -1,4 +1,4 @@
-#!/Library/installapplications/Python.framework/Versions/3.8/bin/python3
+#!/Library/installapplications/Python.framework/Versions/Current/bin/python3
 '''Bless a Virtual Machine'''
 
 # This script blesses the booted volume on 10.13+ APFS volumes for virtual

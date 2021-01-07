@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "$(dirname "$0")/python3.9" "$0" "$@"
+' '''
+# the above calls the python3.9 interpreter relative to the directory of this script
+import sys
+from lib2to3.main import main
+
+sys.exit(main("lib2to3.fixes"))
