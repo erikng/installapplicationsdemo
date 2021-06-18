@@ -80,7 +80,7 @@
     },
     {
       "file": "/Library/installapplications/munki_bootstrap.py",
-      "hash": "a8f773b9e1dce342eb0d1a9260d77d4e9f88316eca73f98492aa6db910726128",
+      "hash": "9091b8e31c1902c65d12696ed43660d4e6fad4a3c3fb99b9ae8c17bf8241a4c0",
       "name": "Munki Bootsrap",
       "type": "rootscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/scripts/root/munki_bootstrap.py"
@@ -95,7 +95,7 @@
     },
     {
       "file": "/Library/installapplications/userscripts/dockutil.py",
-      "hash": "df6891f634ac337814d2563935d520b48d26cb9927681ea2e240e42c9becbb4f",
+      "hash": "91f0ec20f42b10a9ffae66becd0042aa51bd4bb6114f436d933026533fb76e87",
       "name": "Dockutil User",
       "type": "userscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/scripts/user/dockutil.py"

@@ -102,6 +102,11 @@ def main():
         '/Library/Preferences/ManagedInstalls',
         kCFPreferencesAnyUser, kCFPreferencesCurrentHost)
 
+    CFPreferencesSetValue(
+        'FollowHTTPRedirects', 'all',
+        '/Library/Preferences/ManagedInstalls',
+        kCFPreferencesAnyUser, kCFPreferencesCurrentHost)
+
     # Run Munki with manifest you want to use
     deplog("Command: MainText: The Managed Software Center process may take a few minutes "
            "to complete. Thanks for being patient!")

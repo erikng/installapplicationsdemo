@@ -23,11 +23,11 @@ def hello_install_file(path):
 def dockutil(itemtype, itempath, norestart):
     '''setup an item'''
     if norestart is True:
-        cmd = ['/Library/installapplications/Python.framework/Versions/3.8/bin/python3',
+        cmd = ['/Library/installapplications/Python.framework/Versions/Current/bin/python3',
                '/Library/installapplications/dockutil',
                itemtype, itempath, '--no-restart']
     else:
-        cmd = ['/Library/installapplications/Python.framework/Versions/3.8/bin/python3',
+        cmd = ['/Library/installapplications/Python.framework/Versions/Current/bin/python3',
                '/Library/installapplications/dockutil',
                itemtype, itempath]
     try:
@@ -43,11 +43,11 @@ def dockutil(itemtype, itempath, norestart):
 def dockutil_upgrade(itemtype, itempath, olditem, norestart):
     '''uprade an item'''
     if norestart is True:
-        cmd = ['/Library/installapplications/Python.framework/Versions/3.8/bin/python3',
+        cmd = ['/Library/installapplications/Python.framework/Versions/Current/bin/python3',
                '/Library/installapplications/dockutil',
                itemtype, itempath, '--replacing', olditem, '--no-restart']
     else:
-        cmd = ['/Library/installapplications/Python.framework/Versions/3.8/bin/python3',
+        cmd = ['/Library/installapplications/Python.framework/Versions/Current/bin/python3',
                '/Library/installapplications/dockutil',
                itemtype, itempath, '--replacing', olditem]
     try:
@@ -63,11 +63,11 @@ def dockutil_upgrade(itemtype, itempath, olditem, norestart):
 def dockutil_folder(itemtype, itempath, norestart, sorttype):
     '''set a folder'''
     if norestart is True:
-        cmd = ['/Library/installapplications/Python.framework/Versions/3.8/bin/python3',
+        cmd = ['/Library/installapplications/Python.framework/Versions/Current/bin/python3',
                '/Library/installapplications/dockutil',
                itemtype, itempath, '--sort', sorttype, '--no-restart']
     else:
-        cmd = ['/Library/installapplications/Python.framework/Versions/3.8/bin/python3',
+        cmd = ['/Library/installapplications/Python.framework/Versions/Current/bin/python3',
                '/Library/installapplications/dockutil',
                itemtype, itempath, '--sort', sorttype]
     try:
