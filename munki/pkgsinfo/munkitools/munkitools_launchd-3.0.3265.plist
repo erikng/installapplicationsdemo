@@ -26,6 +26,8 @@
 	<string>66441eaba5aa717fd81d1a84ddfb309da90cff6bc5904dc0e94c1f6e216c2a89</string>
 	<key>installer_item_location</key>
 	<string>munkitools/munkitools_launchd-3.0.3265.pkg</string>
+	<key>PackageURL</key>
+	<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_launchd-3.0.3265.pkg?raw=true</string>
 	<key>installer_item_size</key>
 	<integer>4</integer>
 	<key>minimum_os_version</key>

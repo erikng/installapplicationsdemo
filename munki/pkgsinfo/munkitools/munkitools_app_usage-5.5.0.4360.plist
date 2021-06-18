@@ -35,6 +35,8 @@
 	<string>1afd3120d5b964c85282a09a0bde08d67bd77e6292d165df3cf49866300a6f3a</string>
 	<key>installer_item_location</key>
 	<string>munkitools/munkitools_app_usage-5.5.0.4360.pkg</string>
+	<key>PackageURL</key>
+	<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_app_usage-5.5.0.4360.pkg?raw=true</string>
 	<key>installer_item_size</key>
 	<integer>8</integer>
 	<key>minimum_os_version</key>

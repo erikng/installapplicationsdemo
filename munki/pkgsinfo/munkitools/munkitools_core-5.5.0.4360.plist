@@ -35,6 +35,8 @@
 	<string>deb7aefe85d8d5f98d45a5441f03a2e591eb86a10e8d7d03021894a0f2032876</string>
 	<key>installer_item_location</key>
 	<string>munkitools/munkitools_core-5.5.0.4360.pkg</string>
+	<key>PackageURL</key>
+	<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_core-5.5.0.4360.pkg?raw=true</string>
 	<key>installer_item_size</key>
 	<integer>227</integer>
 	<key>minimum_os_version</key>

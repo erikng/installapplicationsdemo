@@ -35,6 +35,8 @@
 	<string>f5c72d867efcd3fd57b0c1aa34358a0fa65e358965c1406cee37379918ccf11f</string>
 	<key>installer_item_location</key>
 	<string>munkitools/munkitools_app-5.4.0.4362.pkg</string>
+	<key>PackageURL</key>
+	<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools/munkitools_app-5.4.0.4362.pkg?raw=true</string>
 	<key>installer_item_size</key>
 	<integer>11888</integer>
 	<key>minimum_os_version</key>

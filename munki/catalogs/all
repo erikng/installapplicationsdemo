@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>PackageURL</key>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_core-5.5.0.4360.pkg?raw=true</string>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>
@@ -57,6 +59,8 @@
 		<string>5.5.0.4360</string>
 	</dict>
 	<dict>
+		<key>PackageURL</key>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_launchd-3.0.3265.pkg?raw=true</string>
 		<key>RestartAction</key>
 		<string>RequireRestart</string>
 		<key>autoremove</key>
@@ -110,6 +114,8 @@
 		<string>3.0.3265</string>
 	</dict>
 	<dict>
+		<key>PackageURL</key>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_app_usage-5.5.0.4360.pkg?raw=true</string>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>
@@ -165,6 +171,8 @@
 		<string>5.5.0.4360</string>
 	</dict>
 	<dict>
+		<key>PackageURL</key>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools/munkitools_app-5.4.0.4362.pkg?raw=true</string>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>
@@ -220,6 +228,8 @@
 		<string>5.4.0.4362</string>
 	</dict>
 	<dict>
+		<key>PackageURL</key>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_admin-5.5.0.4360.pkg?raw=true</string>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>
@@ -274,6 +284,8 @@
 		<string>5.5.0.4360</string>
 	</dict>
 	<dict>
+		<key>PackageURL</key>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_python-3.9.5.4361.pkg?raw=true</string>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>
@@ -323,6 +335,8 @@
 		<string>3.9.5.4361</string>
 	</dict>
 	<dict>
+		<key>PackageURL</key>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/apps/crypt-4.0.208.pkg?raw=true</string>
 		<key>RestartAction</key>
 		<string>RequireRestart</string>
 		<key>autoremove</key>
@@ -556,6 +570,8 @@ if __name__ == "__main__":
 		<string>4.0.208</string>
 	</dict>
 	<dict>
+		<key>PackageURL</key>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/apps/GoogleChrome-91.0.4472.114.dmg?raw=true</string>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>

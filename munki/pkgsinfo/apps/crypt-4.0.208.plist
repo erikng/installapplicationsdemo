@@ -101,6 +101,8 @@ if __name__ == "__main__":
 	<string>aa25c316b84d59bfc263421ac63dbcbaf953441a8ec3c9cf55317aecf2acbaf3</string>
 	<key>installer_item_location</key>
 	<string>apps/crypt-4.0.208.pkg</string>
+	<key>PackageURL</key>
+	<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/apps/crypt-4.0.208.pkg?raw=true</string>
 	<key>installer_item_size</key>
 	<integer>28437</integer>
 	<key>minimum_os_version</key>

@@ -27,6 +27,8 @@
 	<string>d6c71d570d45a52d13cf4c75e0cab5e6b0c698bbba5b615d800221e3c638806e</string>
 	<key>installer_item_location</key>
 	<string>apps/GoogleChrome-91.0.4472.114.dmg</string>
+	<key>PackageURL</key>
+	<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/apps/GoogleChrome-91.0.4472.114.dmg?raw=true</string>
 	<key>installer_item_size</key>
 	<integer>179872</integer>
 	<key>installer_type</key>

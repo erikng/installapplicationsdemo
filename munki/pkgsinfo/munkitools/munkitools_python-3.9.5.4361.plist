@@ -35,6 +35,8 @@
 	<string>a607c92ee1268219fbdb46880fc3d3da65a92b6f099b02e592a40dc4e6d6bd05</string>
 	<key>installer_item_location</key>
 	<string>munkitools/munkitools_python-3.9.5.4361.pkg</string>
+	<key>PackageURL</key>
+	<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_python-3.9.5.4361.pkg?raw=true</string>
 	<key>installer_item_size</key>
 	<integer>35607</integer>
 	<key>minimum_os_version</key>
