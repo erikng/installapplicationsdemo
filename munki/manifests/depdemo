@@ -8,12 +8,12 @@
 	</array>
 	<key>managed_installs</key>
 	<array>
-		<string>GoogleChrome</string>
 		<string>munkitools</string>
 		<string>munkitools_app_usage</string>
 		<string>munkitools_core</string>
 		<string>munkitools_launchd</string>
 		<string>munkitools_python</string>
+		<string>GoogleChrome</string>
 	</array>
 </dict>
 </plist>
