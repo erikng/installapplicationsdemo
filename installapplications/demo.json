@@ -15,7 +15,7 @@
       "name": "Munki (LaunchD)",
       "packageid": "com.googlecode.munki.launchd",
       "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/pkgs/munkitools_launchd-3.0.3265.pkg",
+      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/munkitools_launchd-3.0.3265.pkg?raw",
       "version": "3.0.3265"
     },
     {
@@ -24,7 +24,7 @@
       "name": "Munki (Core)",
       "packageid": "com.googlecode.munki.core",
       "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/pkgs/munkitools_core-5.5.0.4360.pkg",
+      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/munkitools_core-5.5.0.4360.pkg?raw",
       "version": "5.5.0.4360"
     },
     {
@@ -33,7 +33,7 @@
       "name": "Munki (Python)",
       "packageid": "com.googlecode.munki.python",
       "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/pkgs/munkitools_python-3.9.5.4361.pkg",
+      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/munkitools_python-3.9.5.4361.pkg?raw",
       "version": "3.9.5.4361"
     },
     {
@@ -42,7 +42,7 @@
       "name": "Dockutil Python3",
       "packageid": "com.installapplicationsdemo.dockutil",
       "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/pkgs/dockutil-3.0.pkg",
+      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/dockutil-3.0.pkg?raw",
       "version": "3.0"
     },
     {
@@ -51,7 +51,7 @@
       "name": "hello",
       "packageid": "com.github.erikng.hello",
       "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/pkgs/hello-0.0.2.06172021203518.pkg",
+      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/hello-0.0.2.06172021203518.pkg?raw",
       "version": "0.0.2.06172021203518"
     },
     {

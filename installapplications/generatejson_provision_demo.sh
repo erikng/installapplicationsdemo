@@ -28,35 +28,35 @@ item-name='Munki (LaunchD)' \
 item-path="${PKGSDIR}/munkitools_launchd-3.0.3265.pkg" \
 item-stage='setupassistant' \
 item-type='package' \
-item-url="${PKGSURL}/munkitools_launchd-3.0.3265.pkg" \
+item-url="https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/munkitools_launchd-3.0.3265.pkg?raw=true" \
 script-do-not-wait=False \
 --item \
 item-name='Munki (Core)' \
 item-path="${PKGSDIR}/munkitools_core-5.5.0.4360.pkg" \
 item-stage='setupassistant' \
 item-type='package' \
-item-url="${PKGSURL}/munkitools_core-5.5.0.4360.pkg" \
+item-url="https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/munkitools_core-5.5.0.4360.pkg?raw=true" \
 script-do-not-wait=False \
 --item \
 item-name='Munki (Python)' \
 item-path="${PKGSDIR}/munkitools_python-3.9.5.4361.pkg" \
 item-stage='setupassistant' \
 item-type='package' \
-item-url="${PKGSURL}/munkitools_python-3.9.5.4361.pkg" \
+item-url="https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/munkitools_python-3.9.5.4361.pkg?raw=true" \
 script-do-not-wait=False \
 --item \
 item-name='Dockutil Python3' \
 item-path="${PKGSDIR}/dockutil-3.0.pkg" \
 item-stage='setupassistant' \
 item-type='package' \
-item-url="${PKGSURL}/dockutil-3.0.pkg" \
+item-url="https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/dockutil-3.0.pkg?raw=true" \
 script-do-not-wait=False \
 --item \
 item-name='hello' \
 item-path="${PKGSDIR}/hello-0.0.2.06172021203518.pkg" \
 item-stage='setupassistant' \
 item-type='package' \
-item-url="${PKGSURL}/hello-0.0.2.06172021203518.pkg" \
+item-url="https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/hello-0.0.2.06172021203518.pkg?raw=true" \
 script-do-not-wait=False \
 --item \
 item-name='DEPNotify Customization' \
