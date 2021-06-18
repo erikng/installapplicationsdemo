@@ -42,7 +42,7 @@
       "name": "Dockutil Python3",
       "packageid": "com.installapplicationsdemo.dockutil",
       "type": "package",
-      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/dockutil-3.0.pkg?raw",
+      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/dockutil-3.0.pkg?raw=true",
       "version": "3.0"
     },
     {
