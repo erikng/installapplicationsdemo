@@ -42,7 +42,7 @@
       "name": "Dockutil Python3",
       "packageid": "com.installapplicationsdemo.dockutil",
       "type": "package",
-      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/dockutil-3.0.pkg?raw=true",
+      "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/dockutil-3.0.pkg?raw",
       "version": "3.0"
     },
     {
@@ -53,22 +53,15 @@
       "type": "package",
       "url": "https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/hello-0.0.2.06172021203518.pkg?raw=true",
       "version": "0.0.2.06172021203518"
-    },
-    {
-      "file": "/Library/installapplications/depnotify_customization.py",
-      "hash": "d3c555a82cf3f985bb3fef65510c48eb3e8ca4a3bf253411b2257a03f3a56919",
-      "name": "DEPNotify Customization",
-      "type": "rootscript",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/scripts/root/depnotify_customization.py"
     }
   ],
   "userland": [
     {
-      "file": "/Library/installapplications/userscripts/depnotify_user_launcher.py",
-      "hash": "0908e094dd38d939b57220fa3189fb34eccb37e7c850c7018340b79b42c1f77c",
-      "name": "DEPNotify User Launcher",
+      "file": "/Library/installapplications/userscripts/hello_user_launcher.py",
+      "hash": "88bd4b50873f2c566c81d8fe1d7b932046e9f20484d42f4df0cf77e24ab83e73",
+      "name": "hello User Launcher",
       "type": "userscript",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/scripts/user/depnotify_user_launcher.py"
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/scripts/user/hello_user_launcher.py"
     },
     {
       "donotwait": true,
@@ -113,13 +106,6 @@
       "name": "Munki LaunchD Loader",
       "type": "rootscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/scripts/root/munki_launchd_loader.py"
-    },
-    {
-      "file": "/Library/installapplications/depnotify_end.py",
-      "hash": "154f70f1c03711aae90bb8d2e6c06dc302608248865671136edc82af2c8b1082",
-      "name": "DEPNotify End",
-      "type": "rootscript",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/scripts/root/depnotify_end.py"
     }
   ]
 }

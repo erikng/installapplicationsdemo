@@ -59,18 +59,11 @@ item-type='package' \
 item-url="https://github.com/erikng/installapplicationsdemo/blob/main/installapplications/pkgs/hello-0.0.2.06172021203518.pkg?raw=true" \
 script-do-not-wait=False \
 --item \
-item-name='DEPNotify Customization' \
-item-path="${ROOTSCRIPTSDIR}/depnotify_customization.py" \
-item-stage='setupassistant' \
-item-type='rootscript' \
-item-url="${ROOTSCRIPTSURL}/depnotify_customization.py" \
-script-do-not-wait=False \
---item \
-item-name='DEPNotify User Launcher' \
-item-path="${USERSCRIPTSDIR}/depnotify_user_launcher.py" \
+item-name='hello User Launcher' \
+item-path="${USERSCRIPTSDIR}/hello_user_launcher.py" \
 item-stage='userland' \
 item-type='userscript' \
-item-url="${USERSCRIPTSURL}/depnotify_user_launcher.py" \
+item-url="${USERSCRIPTSURL}/hello_user_launcher.py" \
 script-do-not-wait=False \
 --item \
 item-name='Caffeinate Machine' \
@@ -113,13 +106,6 @@ item-path="${ROOTSCRIPTSDIR}/munki_launchd_loader.py" \
 item-stage='userland' \
 item-type='rootscript' \
 item-url="${ROOTSCRIPTSURL}/munki_launchd_loader.py" \
-script-do-not-wait=False \
---item \
-item-name='DEPNotify End' \
-item-path="${ROOTSCRIPTSDIR}/depnotify_end.py" \
-item-stage='userland' \
-item-type='rootscript' \
-item-url="${ROOTSCRIPTSURL}/depnotify_end.py" \
 script-do-not-wait=False
 
 /bin/mv ~/Desktop/bootstrap.json ${JSON}
