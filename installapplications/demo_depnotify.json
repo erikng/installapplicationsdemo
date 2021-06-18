@@ -102,7 +102,7 @@
     },
     {
       "file": "/Library/installapplications/userscripts/dockutil.py",
-      "hash": "c816e107cd7edac96503412f6caf8c6a29a887bbb5cfcdf01d5862f9af39f7cc",
+      "hash": "df6891f634ac337814d2563935d520b48d26cb9927681ea2e240e42c9becbb4f",
       "name": "Dockutil User",
       "type": "userscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/user/dockutil.py"

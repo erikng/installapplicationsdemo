@@ -122,6 +122,7 @@ def main():
         hello_install_file('/var/tmp/dockutil.complete')
     else:
         print('Detected previoiusly provisioned dock, exiting.', file=sys.stderr)
+        hello_install_file('/var/tmp/dockutil.complete')
 
 
 if __name__ == '__main__':
