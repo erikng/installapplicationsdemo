@@ -10,321 +10,51 @@
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>Managed Software Center</string>
+		<string>munkitools</string>
 		<key>description</key>
-		<string></string>
+		<string>Core command-line tools used by Managed Software Center.</string>
 		<key>developer</key>
-		<string>Greg Neagle</string>
+		<string>The Munki Project</string>
 		<key>display_name</key>
-		<string>Munki (App)</string>
+		<string>Managed Software Center core tools</string>
 		<key>icon_name</key>
 		<string>Munki.png</string>
 		<key>installed_size</key>
-		<integer>28830</integer>
+		<integer>1031</integer>
 		<key>installer_item_hash</key>
-		<string>3d78fc3685fdd1ac3b7d95b4f8de9161a7a488ed6b0a5658c670c3a4f14c757f</string>
+		<string>deb7aefe85d8d5f98d45a5441f03a2e591eb86a10e8d7d03021894a0f2032876</string>
 		<key>installer_item_location</key>
-		<string>munkitools_app-5.1.0.3873.pkg</string>
+		<string>munkitools/munkitools_core-5.5.0.4360.pkg</string>
 		<key>installer_item_size</key>
-		<integer>11421</integer>
+		<integer>227</integer>
 		<key>minimum_os_version</key>
-		<string>10.5.0</string>
+		<string>10.11</string>
 		<key>name</key>
-		<string>munkitools_app</string>
+		<string>munkitools_core</string>
 		<key>receipts</key>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>28830</integer>
+				<integer>1031</integer>
 				<key>packageid</key>
-				<string>com.googlecode.munki.app</string>
+				<string>com.googlecode.munki.core</string>
 				<key>version</key>
-				<string>5.1.0.3873</string>
+				<string>5.5.0.4360</string>
 			</dict>
 		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>5.1.0.3873</string>
-	</dict>
-	<dict>
-		<key>RestartAction</key>
-		<string>RequireRestart</string>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
+		<key>requires</key>
 		<array>
-			<string>production</string>
-		</array>
-		<key>category</key>
-		<string>Encryption</string>
-		<key>description</key>
-		<string></string>
-		<key>developer</key>
-		<string>Graham Gilbert</string>
-		<key>display_name</key>
-		<string>Crypt</string>
-		<key>installed_size</key>
-		<integer>12666</integer>
-		<key>installer_item_hash</key>
-		<string>ecfb1d0632953cde8d95676b6d2812590fc515cd96709d0af125486917f72b32</string>
-		<key>installer_item_location</key>
-		<string>Crypt-3.3.0.178.pkg</string>
-		<key>installer_item_size</key>
-		<integer>4717</integer>
-		<key>minimum_os_version</key>
-		<string>10.5.0</string>
-		<key>name</key>
-		<string>crypt</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>12666</integer>
-				<key>packageid</key>
-				<string>com.grahamgilbert.Crypt</string>
-				<key>version</key>
-				<string>3.3.0.178</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>3.3.0.178</string>
-	</dict>
-	<dict>
-		<key>PayloadIdentifier</key>
-		<string>com.installapplicationsdemo.munki</string>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>production</string>
-		</array>
-		<key>category</key>
-		<string>Managed Software Center</string>
-		<key>description</key>
-		<string>Management file Munki</string>
-		<key>developer</key>
-		<string>Erik Gomez</string>
-		<key>display_name</key>
-		<string>Munki</string>
-		<key>icon_name</key>
-		<string>Munki.png</string>
-		<key>installer_item_hash</key>
-		<string>51bedfc8e82e28a30d0b3dfd0350a3b17f59e396183f544a59c04dc05afed601</string>
-		<key>installer_item_location</key>
-		<string>ManagedInstalls-1.1.mobileconfig</string>
-		<key>installer_item_size</key>
-		<integer>1</integer>
-		<key>installer_type</key>
-		<string>profile</string>
-		<key>minimum_munki_version</key>
-		<string>2.2</string>
-		<key>minimum_os_version</key>
-		<string>10.7</string>
-		<key>name</key>
-		<string>ManagedInstalls.mobileconfig</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_profile</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>update_for</key>
-		<array>
-			<string>munkitools_app_usage</string>
-			<string>munkitools_app</string>
-			<string>munkitools_core</string>
-			<string>munkitools_launchd</string>
 			<string>munkitools_python</string>
-		</array>
-		<key>version</key>
-		<string>1.1</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>production</string>
-		</array>
-		<key>category</key>
-		<string>Managed Software Center</string>
-		<key>description</key>
-		<string></string>
-		<key>developer</key>
-		<string>Greg Neagle</string>
-		<key>display_name</key>
-		<string>Munki (Embedded Python)</string>
-		<key>icon_name</key>
-		<string>Munki.png</string>
-		<key>installed_size</key>
-		<integer>83516</integer>
-		<key>installer_item_hash</key>
-		<string>d54f7581dfcd8b199714ff821b27e0d5d3c45fa4c367722e87bbe963fa9e8f72</string>
-		<key>installer_item_location</key>
-		<string>munkitools_python-3.7.4.pkg</string>
-		<key>installer_item_size</key>
-		<integer>25199</integer>
-		<key>minimum_os_version</key>
-		<string>10.5.0</string>
-		<key>name</key>
-		<string>munkitools_python</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>83516</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.python</string>
-				<key>version</key>
-				<string>3.7.4</string>
-			</dict>
+			<string>munkitools_launchd</string>
 		</array>
 		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
 		<true/>
 		<key>uninstall_method</key>
 		<string>removepackages</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>3.7.4</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>production</string>
-		</array>
-		<key>category</key>
-		<string>Managed Software Center</string>
-		<key>description</key>
-		<string></string>
-		<key>developer</key>
-		<string>Greg Neagle</string>
-		<key>display_name</key>
-		<string>Munki (App Usage)</string>
-		<key>icon_name</key>
-		<string>Munki.png</string>
-		<key>installed_size</key>
-		<integer>25</integer>
-		<key>installer_item_hash</key>
-		<string>371eacefd9d0d6dd558ce772556b2f0b52b1a0e1a3772ab5a1a89b36e5e11aaf</string>
-		<key>installer_item_location</key>
-		<string>munkitools_app_usage-4.0.0.3881.pkg</string>
-		<key>installer_item_size</key>
-		<integer>8</integer>
-		<key>minimum_os_version</key>
-		<string>10.5.0</string>
-		<key>name</key>
-		<string>munkitools_app_usage</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>25</integer>
-				<key>packageid</key>
-				<string>com.googlecode.munki.app_usage</string>
-				<key>version</key>
-				<string>4.0.0.3881</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>4.0.0.3881</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>production</string>
-		</array>
-		<key>category</key>
-		<string>Web Browsers</string>
-		<key>description</key>
-		<string></string>
-		<key>developer</key>
-		<string>Google</string>
-		<key>display_name</key>
-		<string>Google Chrome</string>
-		<key>installer_item_hash</key>
-		<string>9abc6ab31aedf6e05836ff1855a7b94e2571ecf9074ac970b0920ee83559156a</string>
-		<key>installer_item_location</key>
-		<string>GoogleChrome-79.0.3945.79.dmg</string>
-		<key>installer_item_size</key>
-		<integer>82186</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.google.Chrome</string>
-				<key>CFBundleName</key>
-				<string>Chrome</string>
-				<key>CFBundleShortVersionString</key>
-				<string>79.0.3945.79</string>
-				<key>CFBundleVersion</key>
-				<string>3945.79</string>
-				<key>minosversion</key>
-				<string>10.10.0</string>
-				<key>path</key>
-				<string>/Applications/Google Chrome.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>Google Chrome.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.10.0</string>
-		<key>name</key>
-		<string>GoogleChrome</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>79.0.3945.79</string>
+		<string>5.5.0.4360</string>
 	</dict>
 	<dict>
 		<key>RestartAction</key>
@@ -342,7 +72,7 @@
 		<key>developer</key>
 		<string>Greg Neagle</string>
 		<key>display_name</key>
-		<string>Munki (LaunchD)</string>
+		<string>Managed Software Center launchd</string>
 		<key>icon_name</key>
 		<string>Munki.png</string>
 		<key>installed_size</key>
@@ -350,7 +80,7 @@
 		<key>installer_item_hash</key>
 		<string>66441eaba5aa717fd81d1a84ddfb309da90cff6bc5904dc0e94c1f6e216c2a89</string>
 		<key>installer_item_location</key>
-		<string>munkitools_launchd-3.0.3265.pkg</string>
+		<string>munkitools/munkitools_launchd-3.0.3265.pkg</string>
 		<key>installer_item_size</key>
 		<integer>4</integer>
 		<key>minimum_os_version</key>
@@ -387,52 +117,54 @@
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>Managed Software Center</string>
+		<string>munkitools</string>
 		<key>description</key>
-		<string></string>
+		<string>Application usage statistics for Managed Software Center.</string>
 		<key>developer</key>
-		<string>Greg Neagle</string>
+		<string>The Munki Project</string>
 		<key>display_name</key>
-		<string>Munki (Core)</string>
+		<string>Managed Software Center app usage</string>
 		<key>icon_name</key>
 		<string>Munki.png</string>
 		<key>installed_size</key>
-		<integer>987</integer>
+		<integer>25</integer>
 		<key>installer_item_hash</key>
-		<string>79c3c585a0ba79909df45a8f2c739a8e836529d7d875d6c3fc5d21e212c5a2af</string>
+		<string>1afd3120d5b964c85282a09a0bde08d67bd77e6292d165df3cf49866300a6f3a</string>
 		<key>installer_item_location</key>
-		<string>munkitools_core-4.0.0.3881.pkg</string>
+		<string>munkitools/munkitools_app_usage-5.5.0.4360.pkg</string>
 		<key>installer_item_size</key>
-		<integer>217</integer>
+		<integer>8</integer>
 		<key>minimum_os_version</key>
-		<string>10.5.0</string>
+		<string>10.11</string>
 		<key>name</key>
-		<string>munkitools_core</string>
+		<string>munkitools_app_usage</string>
 		<key>receipts</key>
 		<array>
 			<dict>
 				<key>installed_size</key>
-				<integer>987</integer>
+				<integer>25</integer>
 				<key>packageid</key>
-				<string>com.googlecode.munki.core</string>
+				<string>com.googlecode.munki.app_usage</string>
 				<key>version</key>
-				<string>4.0.0.3881</string>
+				<string>5.5.0.4360</string>
 			</dict>
 		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+		</array>
 		<key>unattended_install</key>
-		<true/>
-		<key>unattended_uninstall</key>
 		<true/>
 		<key>uninstall_method</key>
 		<string>removepackages</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>4.0.0.3881</string>
+		<string>5.5.0.4360</string>
 	</dict>
 	<dict>
-		<key>PayloadIdentifier</key>
-		<string>com.installapplicationsdemo.crypt</string>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>
@@ -440,41 +172,450 @@
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>Encryption</string>
+		<string>munkitools</string>
 		<key>description</key>
-		<string>Management file for Crypt</string>
+		<string>Managed Software Center application.</string>
 		<key>developer</key>
-		<string>Erik Gomez</string>
+		<string>The Munki Project</string>
 		<key>display_name</key>
-		<string>Crypt</string>
+		<string>Managed Software Center</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
+		<key>installed_size</key>
+		<integer>30395</integer>
 		<key>installer_item_hash</key>
-		<string>81807f38508d25d77e4fe5af6004eefc62ef1d2cfd7ba032f92912fd530ce8e5</string>
+		<string>f5c72d867efcd3fd57b0c1aa34358a0fa65e358965c1406cee37379918ccf11f</string>
 		<key>installer_item_location</key>
-		<string>Crypt-1.1.mobileconfig</string>
+		<string>munkitools/munkitools_app-5.4.0.4362.pkg</string>
 		<key>installer_item_size</key>
-		<integer>1</integer>
-		<key>installer_type</key>
-		<string>profile</string>
-		<key>minimum_munki_version</key>
-		<string>2.2</string>
+		<integer>11888</integer>
 		<key>minimum_os_version</key>
-		<string>10.7</string>
+		<string>10.11</string>
 		<key>name</key>
-		<string>Crypt.mobileconfig</string>
+		<string>munkitools</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>30395</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.app</string>
+				<key>version</key>
+				<string>5.4.0.4362</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
+			<string>munkitools_launchd</string>
+		</array>
 		<key>unattended_install</key>
 		<true/>
-		<key>unattended_uninstall</key>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>5.4.0.4362</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Command-line Managed Software Center admin tools.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center admin tools</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
+		<key>installed_size</key>
+		<integer>111</integer>
+		<key>installer_item_hash</key>
+		<string>42637d149d7ca65b9887bc7559624990499679ece29e113a22c3eef6eeeb0b70</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_admin-5.5.0.4360.pkg</string>
+		<key>installer_item_size</key>
+		<integer>23</integer>
+		<key>minimum_os_version</key>
+		<string>10.11</string>
+		<key>name</key>
+		<string>munkitools_admin</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>111</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.admin</string>
+				<key>version</key>
+				<string>5.5.0.4360</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
 		<true/>
 		<key>uninstall_method</key>
-		<string>remove_profile</string>
+		<string>removepackages</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>update_for</key>
 		<array>
-			<string>crypt</string>
+			<string>munkitools_python</string>
+			<string>munkitools_core</string>
 		</array>
 		<key>version</key>
-		<string>1.1</string>
+		<string>5.5.0.4360</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>munkitools</string>
+		<key>description</key>
+		<string>Embedded Python tools used by Managed Software Center.</string>
+		<key>developer</key>
+		<string>The Munki Project</string>
+		<key>display_name</key>
+		<string>Managed Software Center embedded python</string>
+		<key>icon_name</key>
+		<string>Munki.png</string>
+		<key>installed_size</key>
+		<integer>131506</integer>
+		<key>installer_item_hash</key>
+		<string>a607c92ee1268219fbdb46880fc3d3da65a92b6f099b02e592a40dc4e6d6bd05</string>
+		<key>installer_item_location</key>
+		<string>munkitools/munkitools_python-3.9.5.4361.pkg</string>
+		<key>installer_item_size</key>
+		<integer>35607</integer>
+		<key>minimum_os_version</key>
+		<string>10.11</string>
+		<key>name</key>
+		<string>munkitools_python</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>131506</integer>
+				<key>packageid</key>
+				<string>com.googlecode.munki.python</string>
+				<key>version</key>
+				<string>3.9.5.4361</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.9.5.4361</string>
+	</dict>
+	<dict>
+		<key>RestartAction</key>
+		<string>RequireRestart</string>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Crypt is a Filevault 2 Escrow solution.</string>
+		<key>display_name</key>
+		<string>Crypt</string>
+		<key>installcheck_script</key>
+		<string>#!/usr/local/munki/python
+
+'''This installcheck script template evaluates the installed version
+of Crypt as well as if Crypt is included properly in the authdb.'''
+
+from subprocess import check_output
+from distutils.version import StrictVersion
+import plistlib
+import os
+
+def get_mechs():
+    '''returns a list of all current authdb mechs'''
+    cmd = ["/usr/bin/security", "authorizationdb", "read", "system.login.console"]
+    cur_mech_plist = plistlib.loads(check_output(cmd))
+    mechs_only = cur_mech_plist['mechanisms']
+    return mechs_only
+
+def get_crypt_vers():
+    '''returns the installed version of the Crypt bundle'''
+    try:
+        f = open("/Library/Security/SecurityAgentPlugins/Crypt.bundle/Contents/Info.plist", 'rb')
+    except:
+        print("Unable to open Crypt bundle to get version")
+        exit(0)
+    try:    
+        plist = plistlib.load(f)
+    except:
+        print("Unable to get plist info from Crypt bundle")
+        exit(0)
+    f.close()
+    return plist["CFBundleShortVersionString"]
+
+def main():
+    '''Checks if Crypt is properly installed and up to date. Note that the version var
+    below is auto-substituted by AutoPkg - if you are adding this installcheck manually,
+    be sure to insert the proper version number.'''
+
+    pkg_vers = '4.0'
+
+    install_items = ['/Library/Security/SecurityAgentPlugins/Crypt.bundle',
+                     '/Library/LaunchDaemons/com.grahamgilbert.crypt.plist',
+                     '/Library/Crypt/checkin',
+                     '/Library/Crypt/python',
+                     '/Library/Crypt/Python.framework',
+                     '/Library/Security/SecurityAgentPlugins/Crypt.bundle']
+    for item in install_items:
+        if not os.path.exists(item):
+            # we are missing a needed file - Crypt is damaged or not installed
+            exit(0)
+
+    # check if Crypt is up to date
+    installed_vers = get_crypt_vers()
+    if StrictVersion(installed_vers) &lt; StrictVersion(pkg_vers):
+        # we are out of date compared to the pkg version
+        exit(0)
+
+    mechs = ['Crypt:Check,privileged', 'Crypt:CryptGUI', 'Crypt:Enablement,privileged']
+    current_mechs = get_mechs()
+    for crypt_mech in mechs:
+        if not crypt_mech in current_mechs:
+            # mechs are not in place
+            exit(0)
+
+    # all mechs in place and version is up to date
+    exit(1)
+
+if __name__ == "__main__":
+    main()
+				</string>
+		<key>installed_size</key>
+		<integer>92680</integer>
+		<key>installer_item_hash</key>
+		<string>aa25c316b84d59bfc263421ac63dbcbaf953441a8ec3c9cf55317aecf2acbaf3</string>
+		<key>installer_item_location</key>
+		<string>apps/crypt-4.0.208.pkg</string>
+		<key>installer_item_size</key>
+		<integer>28437</integer>
+		<key>minimum_os_version</key>
+		<string>10.14</string>
+		<key>name</key>
+		<string>crypt</string>
+		<key>preuninstall_script</key>
+		<string>#!/usr/bin/python
+
+        # Copyright 2015 Crypt Project.
+        #
+        # Licensed under the Apache License, Version 2.0 (the "License");
+        # you may not use this file except in compliance with the License.
+        # You may obtain a copy of the License at
+        #
+        # http://www.apache.org/licenses/LICENSE-2.0
+        #
+        # Unless required by applicable law or agreed to in writing, software
+        # distributed under the License is distributed on an "AS IS" BASIS,
+        # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        # See the License for the specific language governing permissions and
+        # limitations under the License.
+
+        import  os,     \
+                sys,     \
+                plistlib,  \
+                platform,   \
+                subprocess
+        from    subprocess import Popen, \
+                                  PIPE,   \
+                                  STDOUT
+
+        ##
+        ## mech_list: A list of strings. The list of mechs to add
+        ## index_mech: A string. The mech already in the DB, your mech_list will be installed above or below the index_mech
+        ## index_offset: An integer. Used to position the mech_list above or below the index_mech. 0 will be directly above,
+        ## 1 will be directly below. -1 would have one space between the mech_list and the index_mech etc...
+        ##
+
+        ##
+        ## Currently the FV2AuthPlugin only runs at the Login Window.
+        ## I may add support for Screen Saver unlock. There are stubs for
+        ## the authenticate db in place because of this.
+        ##
+
+        ## Path to system.login.console.plist
+        system_login_console_plist = "/private/var/tmp/system.login.console.plist"
+
+        ## Path to authenticate.plist
+        #authenticate_plist = "/private/var/tmp/authenticate.plist"
+
+        ## Mechs that support FV2AuthPlugin
+        fv2_mechs = ["Crypt:Check,privileged","Crypt:CryptGUI","Crypt:Enablement,privileged"]
+        fv2_index_mech = "loginwindow:done"
+        fv2_index_offset = 0
+
+        def bash_command(script):
+            try:
+                return subprocess.check_output(script)
+            except (subprocess.CalledProcessError, OSError), err:
+                sys.exit("[* Error] **%s** [%s]" % (err, str(script)))
+
+        def remove_mechs_in_db(db, mech_list):
+            for mech in mech_list:
+                for old_mech in filter(lambda x: mech in x, db['mechanisms']):
+                    db['mechanisms'].remove(old_mech)
+            return db
+
+        def set_mechs_in_db(db, mech_list, index_mech, index_offset):
+            ## Clear away any previous configs
+            db = remove_mechs_in_db(db, mech_list)
+
+            ## Add mech_list to db
+            # i = int(db['mechanisms'].index(index_mech)) + index_offset
+            # for mech in mech_list:
+            #     db['mechanisms'].insert(i, mech)
+            #     i += 1
+            return db
+
+        def edit_authdb():
+            ## Export "system.login.console"
+            system_login_console = bash_command(["/usr/bin/security", "authorizationdb", "read", "system.login.console"])
+            f_c = open(system_login_console_plist, 'w')
+            f_c.write(system_login_console)
+            f_c.close()
+
+            ## Export "authenticate"
+            #authenticate = bash_command(["/usr/bin/security", "authorizationdb", "read", "authenticate"])
+            #f_a = open(authenticate_plist, 'w')
+            #f_a.write(authenticate)
+            #f_a.close()
+
+            ## Leave the for loop. Possible support for ScreenSaver unlock
+            for p in [system_login_console_plist]:
+                ## Parse the plist
+                d = plistlib.readPlist(p)
+
+                ## Add FV2 mechs
+                d = set_mechs_in_db(d, fv2_mechs, fv2_index_mech, fv2_index_offset)
+
+                ## Write out the changes
+                plistlib.writePlist(d, p)
+
+            f_c = open(system_login_console_plist, "r")
+            p = Popen(["/usr/bin/security", "authorizationdb", "write", "system.login.console"], stdout=PIPE, stdin=PIPE, stderr=PIPE)
+            stdout_data = p.communicate(input=f_c.read())
+            f_c.close()
+
+            #f_a = open(authenticate_plist, "r")
+            #p = Popen(["/usr/bin/security", "authorizationdb", "write", "authenticate"], stdout=PIPE, stdin=PIPE, stderr=PIPE)
+            #stdout_data = p.communicate(input=f_a.read())
+            #f_a.close()
+
+        def check_root():
+            if not os.geteuid() == 0:
+                sys.exit("\nOnly root can run this script\n")
+
+        def main(argv):
+            check_root()
+            edit_authdb()
+
+        if __name__ == '__main__':
+            main(sys.argv)
+        </string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>92680</integer>
+				<key>packageid</key>
+				<string>com.grahamgilbert.Crypt</string>
+				<key>version</key>
+				<string>4.0.208</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>4.0.208</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>installer_item_hash</key>
+		<string>d6c71d570d45a52d13cf4c75e0cab5e6b0c698bbba5b615d800221e3c638806e</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-91.0.4472.114.dmg</string>
+		<key>installer_item_size</key>
+		<integer>179872</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>91.0.4472.114</string>
+				<key>CFBundleVersion</key>
+				<string>4472.114</string>
+				<key>minosversion</key>
+				<string>10.11.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.11.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>91.0.4472.114</string>
 	</dict>
 </array>
 </plist>

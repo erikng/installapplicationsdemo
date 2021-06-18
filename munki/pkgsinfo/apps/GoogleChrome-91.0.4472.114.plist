@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>erik</string>
+		<key>creation_date</key>
+		<date>2021-06-18T01:44:56Z</date>
+		<key>munki_version</key>
+		<string>5.5.0.4360</string>
+		<key>os_version</key>
+		<string>12.0</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+	<key>display_name</key>
+	<string>Google Chrome</string>
+	<key>installer_item_hash</key>
+	<string>d6c71d570d45a52d13cf4c75e0cab5e6b0c698bbba5b615d800221e3c638806e</string>
+	<key>installer_item_location</key>
+	<string>apps/GoogleChrome-91.0.4472.114.dmg</string>
+	<key>installer_item_size</key>
+	<integer>179872</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.google.Chrome</string>
+			<key>CFBundleName</key>
+			<string>Chrome</string>
+			<key>CFBundleShortVersionString</key>
+			<string>91.0.4472.114</string>
+			<key>CFBundleVersion</key>
+			<string>4472.114</string>
+			<key>minosversion</key>
+			<string>10.11.0</string>
+			<key>path</key>
+			<string>/Applications/Google Chrome.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Google Chrome.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.11.0</string>
+	<key>name</key>
+	<string>GoogleChrome</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>91.0.4472.114</string>
+</dict>
+</plist>

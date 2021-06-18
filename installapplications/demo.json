@@ -19,22 +19,22 @@
       "version": "3.0.3265"
     },
     {
-      "file": "/Library/installapplications/munkitools_core-4.0.0.3881.pkg",
-      "hash": "79c3c585a0ba79909df45a8f2c739a8e836529d7d875d6c3fc5d21e212c5a2af",
+      "file": "/Library/installapplications/munkitools_core-5.5.0.4360.pkg",
+      "hash": "deb7aefe85d8d5f98d45a5441f03a2e591eb86a10e8d7d03021894a0f2032876",
       "name": "Munki (Core)",
       "packageid": "com.googlecode.munki.core",
       "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_core-4.0.0.3881.pkg",
-      "version": "4.0.0.3881"
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_core-5.5.0.4360.pkg",
+      "version": "5.5.0.4360"
     },
     {
-      "file": "/Library/installapplications/munkitools_python-3.7.4.pkg",
-      "hash": "d54f7581dfcd8b199714ff821b27e0d5d3c45fa4c367722e87bbe963fa9e8f72",
+      "file": "/Library/installapplications/munkitools_python-3.9.5.4361.pkg",
+      "hash": "a607c92ee1268219fbdb46880fc3d3da65a92b6f099b02e592a40dc4e6d6bd05",
       "name": "Munki (Python)",
       "packageid": "com.googlecode.munki.python",
       "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_python-3.7.4.pkg",
-      "version": "3.7.4"
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/munkitools_python-3.9.5.4361.pkg",
+      "version": "3.9.5.4361"
     },
     {
       "file": "/Library/installapplications/dockutil-3.0.pkg",
@@ -46,13 +46,13 @@
       "version": "3.0"
     },
     {
-      "file": "/Library/installapplications/DEPNotify-1.1.5.pkg",
-      "hash": "d969b3f5f617424de526a45f5b8badf1d7cbfef8974691beecb3729103003ba0",
-      "name": "DEPNotify",
-      "packageid": "menu.nomad.DEPNotify",
+      "file": "/Library/installapplications/hello-0.0.2.06172021203518.pkg",
+      "hash": "061761faa8aacff44537b780277b88e3a12e611c36bfb9468bd9757f60a13d44",
+      "name": "hello",
+      "packageid": "com.github.erikng.hello",
       "type": "package",
-      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/DEPNotify-1.1.5.pkg",
-      "version": "1.1.5"
+      "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/pkgs/hello-0.0.2.06172021203518.pkg",
+      "version": "0.0.2.06172021203518"
     },
     {
       "file": "/Library/installapplications/depnotify_customization.py",

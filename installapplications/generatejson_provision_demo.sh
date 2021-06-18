@@ -32,17 +32,17 @@ item-url="${PKGSURL}/munkitools_launchd-3.0.3265.pkg" \
 script-do-not-wait=False \
 --item \
 item-name='Munki (Core)' \
-item-path="${PKGSDIR}/munkitools_core-4.0.0.3881.pkg" \
+item-path="${PKGSDIR}/munkitools_core-5.5.0.4360.pkg" \
 item-stage='setupassistant' \
 item-type='package' \
-item-url="${PKGSURL}/munkitools_core-4.0.0.3881.pkg" \
+item-url="${PKGSURL}/munkitools_core-5.5.0.4360.pkg" \
 script-do-not-wait=False \
 --item \
 item-name='Munki (Python)' \
-item-path="${PKGSDIR}/munkitools_python-3.7.4.pkg" \
+item-path="${PKGSDIR}/munkitools_python-3.9.5.4361.pkg" \
 item-stage='setupassistant' \
 item-type='package' \
-item-url="${PKGSURL}/munkitools_python-3.7.4.pkg" \
+item-url="${PKGSURL}/munkitools_python-3.9.5.4361.pkg" \
 script-do-not-wait=False \
 --item \
 item-name='Dockutil Python3' \
@@ -52,11 +52,11 @@ item-type='package' \
 item-url="${PKGSURL}/dockutil-3.0.pkg" \
 script-do-not-wait=False \
 --item \
-item-name='DEPNotify' \
-item-path="${PKGSDIR}/DEPNotify-1.1.5.pkg" \
+item-name='hello' \
+item-path="${PKGSDIR}/hello-0.0.2.06172021203518.pkg" \
 item-stage='setupassistant' \
 item-type='package' \
-item-url="${PKGSURL}/DEPNotify-1.1.5.pkg" \
+item-url="${PKGSURL}/hello-0.0.2.06172021203518.pkg" \
 script-do-not-wait=False \
 --item \
 item-name='DEPNotify Customization' \

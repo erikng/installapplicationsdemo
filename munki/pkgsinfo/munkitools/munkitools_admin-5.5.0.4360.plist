@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>erik</string>
+		<key>creation_date</key>
+		<date>2021-06-18T01:38:53Z</date>
+		<key>munki_version</key>
+		<string>5.5.0.4360</string>
+		<key>os_version</key>
+		<string>12.0</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>category</key>
+	<string>munkitools</string>
+	<key>description</key>
+	<string>Command-line Managed Software Center admin tools.</string>
+	<key>developer</key>
+	<string>The Munki Project</string>
+	<key>display_name</key>
+	<string>Managed Software Center admin tools</string>
+	<key>icon_name</key>
+	<string>Munki.png</string>
+	<key>installed_size</key>
+	<integer>111</integer>
+	<key>installer_item_hash</key>
+	<string>42637d149d7ca65b9887bc7559624990499679ece29e113a22c3eef6eeeb0b70</string>
+	<key>installer_item_location</key>
+	<string>munkitools/munkitools_admin-5.5.0.4360.pkg</string>
+	<key>installer_item_size</key>
+	<integer>23</integer>
+	<key>minimum_os_version</key>
+	<string>10.11</string>
+	<key>name</key>
+	<string>munkitools_admin</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>111</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.admin</string>
+			<key>version</key>
+			<string>5.5.0.4360</string>
+		</dict>
+	</array>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>update_for</key>
+	<array>
+		<string>munkitools_python</string>
+		<string>munkitools_core</string>
+	</array>
+	<key>version</key>
+	<string>5.5.0.4360</string>
+</dict>
+</plist>
