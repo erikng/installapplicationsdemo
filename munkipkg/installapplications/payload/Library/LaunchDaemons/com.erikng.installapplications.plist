@@ -10,6 +10,7 @@
 		<string>/Library/installapplications/installapplications.py</string>
 		<string>--jsonurl</string>
 		<string>https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/demo.json</string>
+		<string>--follow-redirects</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
