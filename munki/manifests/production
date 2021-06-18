@@ -10,6 +10,7 @@
 	<array>
 		<string>crypt</string>
 		<string>GoogleChrome</string>
+		<string>munkitools</string>
 		<string>munkitools_app_usage</string>
 		<string>munkitools_core</string>
 		<string>munkitools_launchd</string>
