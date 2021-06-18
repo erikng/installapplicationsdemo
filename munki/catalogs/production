@@ -172,7 +172,7 @@
 	</dict>
 	<dict>
 		<key>PackageURL</key>
-		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools/munkitools_app-5.4.0.4362.pkg?raw=true</string>
+		<string>https://github.com/erikng/installapplicationsdemo/blob/main/munki/pkgs/munkitools/munkitools_app-5.4.0.4362.pkg?raw=true</string>
 		<key>autoremove</key>
 		<false/>
 		<key>catalogs</key>
