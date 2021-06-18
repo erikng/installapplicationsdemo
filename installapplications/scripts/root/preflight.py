@@ -52,7 +52,7 @@ def main():
     pkg_version = LooseVersion(str(get_install_package_version(
         'menu.nomad.DEPNotify')))
 
-    if pkg_version >= LooseVersion('1.1.5'):
+    if pkg_version >= LooseVersion('1.1.6'):
         pass
     else:
         sys.exit(1)

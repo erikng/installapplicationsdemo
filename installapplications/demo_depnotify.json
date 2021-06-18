@@ -2,7 +2,7 @@
   "preflight": [
     {
       "file": "/Library/installapplications/preflight.py",
-      "hash": "b0103acd36f3ab1562545ea82cbf415eed75d27d08f51867b18bf193efb22942",
+      "hash": "d61a1adeee61f6a64a1d44274bd91c56ca6b56eb635313d99689099b65c59cae",
       "name": "Preflight",
       "type": "rootscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/root/preflight.py"
@@ -65,7 +65,7 @@
   "userland": [
     {
       "file": "/Library/installapplications/userscripts/depnotify_user_launcher.py",
-      "hash": "9517e37dc96b284f1e13faf24af9458fae134f0ff1b3f16498e8de0f9fc85f5a",
+      "hash": "0908e094dd38d939b57220fa3189fb34eccb37e7c850c7018340b79b42c1f77c",
       "name": "DEPNotify User Launcher",
       "type": "userscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/user/depnotify_user_launcher.py"
@@ -102,7 +102,7 @@
     },
     {
       "file": "/Library/installapplications/userscripts/dockutil.py",
-      "hash": "3e5cb7e14c52aa55f98495966220f6d91054fb7545a369315f955ffaf1d3cffb",
+      "hash": "c816e107cd7edac96503412f6caf8c6a29a887bbb5cfcdf01d5862f9af39f7cc",
       "name": "Dockutil User",
       "type": "userscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/master/installapplications/scripts/user/dockutil.py"

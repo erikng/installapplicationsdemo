@@ -14,6 +14,12 @@ import subprocess
 import sys
 
 
+def hello_install_file(path):
+    '''Create a file that hello is looking for to determine install status'''
+    with open(path, "a+") as log:
+        log.write("installed")
+
+
 def dockutil(itemtype, itempath, norestart):
     '''setup an item'''
     if norestart is True:
@@ -113,6 +119,7 @@ def main():
         # multiple flashes.
         dockutil('--remove', 'Applications', True)
         dockutil_folder('--add', '/Applications', False, 'name')
+        hello_install_file('/var/tmp/dockutil.complete')
     else:
         print('Detected previoiusly provisioned dock, exiting.', file=sys.stderr)
 

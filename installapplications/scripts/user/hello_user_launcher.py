@@ -1,5 +1,5 @@
 #!/Library/installapplications/Python.framework/Versions/Current/bin/python3
-'''depnotify launcher'''
+'''hello launcher'''
 # Written by Erik Gomez
 import os
 import platform
@@ -111,19 +111,19 @@ def is_app_running(appname):
     return False
 
 
-def launch_depnotify():
-    '''Launch DEPNotify'''
-    dn_path = '/Applications/Utilities/DEPNotify.app'
-    subprocess.call(['/usr/bin/open', dn_path, '--args', '-munki'])
+def launch_hello():
+    '''Launch hello'''
+    dn_path = '/Applications/Utilities/hello.app'
+    subprocess.call(['/usr/bin/open', dn_path, '--args', '-file-url', ''])
 
 
-def kill_depnotify():
-    '''Kill DEPNotify process'''
-    subprocess.call(['/usr/bin/killall', 'DEPNotify'])
+def kill_hello():
+    '''Kill hello process'''
+    subprocess.call(['/usr/bin/killall', 'hello'])
 
 
 def main():
-    '''Launch DEPNotify if IAs didnt do it'''
+    '''Launch hello'''
     plist_path = os.path.expanduser(
         '~/Library/Preferences/com.apple.dock.plist')
     macos_version = get_macos_version()
@@ -145,22 +145,17 @@ def main():
 
     # Cover both checks since we don't know what OS version will be returned
     if macos_version[0] >= 11 or macos_version[1] >= 16:
-        print('Delaying DEPNotify Launch by 5 seconds due to Big Sur flakiness')
+        print('Delaying hello launch by 5 seconds due to Big Sur flakiness')
         time.sleep(5)
 
-    if is_app_running('DEPNotify'):
-        # Since we no longer use InstallApplications to launch DEPNotify, if
-        # we are bootstrapping, it is more than likely due to a enrollment
-        # failure. If a "quit" command is sent to DEPNotify, it will not update
-        # its status even if the log file is purged. Because of this, we need
-        # to relaunch DEPNotify so it will refresh.
-        print('DEPNotify running - relaunching!')
-        kill_depnotify()
+    if is_app_running('hello'):
+        print('hello running - relaunching!')
+        kill_hello()
         time.sleep(0.5)
-        launch_depnotify()
+        launch_hello()
     else:
-        print('Launching DEPNotify!')
-        launch_depnotify()
+        print('Launching hello!')
+        launch_hello()
 
 
 if __name__ == '__main__':
