@@ -58,7 +58,7 @@
   "userland": [
     {
       "file": "/Library/installapplications/userscripts/hello_user_launcher.py",
-      "hash": "88bd4b50873f2c566c81d8fe1d7b932046e9f20484d42f4df0cf77e24ab83e73",
+      "hash": "6de448f3353b23971afad4f6d7b9205f7a5d76d67447da0af4767711e6bc0eaf",
       "name": "hello User Launcher",
       "type": "userscript",
       "url": "https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/installapplications/scripts/user/hello_user_launcher.py"

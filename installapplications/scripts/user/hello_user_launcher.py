@@ -114,7 +114,7 @@ def is_app_running(appname):
 def launch_hello():
     '''Launch hello'''
     dn_path = '/Applications/Utilities/hello.app'
-    subprocess.call(['/usr/bin/open', dn_path, '--args', '-file-url', ''])
+    subprocess.call(['/usr/bin/open', dn_path, '--args', '-json-url', 'https://raw.githubusercontent.com/erikng/installapplicationsdemo/main/hello/com.github.erikng.hello.json'])
 
 
 def kill_hello():
